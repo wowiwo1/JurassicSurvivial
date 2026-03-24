@@ -1,0 +1,273 @@
+[gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://xylgsirxbnfi"]
+
+[ext_resource type="Script" path="res://game_table/scripts/map_data.gd" id="1_6ki3n"]
+[ext_resource type="Script" path="res://game_table/scripts/table_container.gd" id="2_d6i5o"]
+
+[sub_resource type="Resource" id="Resource_6ki3n"]
+script = ExtResource("1_6ki3n")
+id = 980001
+name = "범람원"
+next_stage = "980006/980007/980011"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+monster_id = "970107/970106/970201"
+spawn_rate = 0.006
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-12/-25/-40"
+drop_id = 100
+
+[sub_resource type="Resource" id="Resource_d6i5o"]
+script = ExtResource("1_6ki3n")
+id = 980002
+name = "해안가 절벽"
+next_stage = "980003/980004"
+time_to_move_map = "15/15"
+required_explore = "15/30"
+option_id = 2010
+monster_id = "970303/970302/970202"
+spawn_rate = 0.009
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-8/-22/-40"
+drop_id = 101
+
+[sub_resource type="Resource" id="Resource_eb6t3"]
+script = ExtResource("1_6ki3n")
+id = 980003
+name = "울창한 숲"
+next_stage = "980008/980013/980016"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+monster_id = "970101/970201/970202"
+spawn_rate = 0.01
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-8/-20/-35"
+drop_id = 102
+
+[sub_resource type="Resource" id="Resource_b2cmk"]
+script = ExtResource("1_6ki3n")
+id = 980004
+name = "진흙 갯벌 해변"
+next_stage = "980002/980005/980011"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+option_id = 2000
+monster_id = "970425/970302/970201"
+spawn_rate = 0.01
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 103
+
+[sub_resource type="Resource" id="Resource_eaigc"]
+script = ExtResource("1_6ki3n")
+id = 980005
+name = "석호"
+next_stage = "980004/980018"
+time_to_move_map = "15/15"
+required_explore = "15/30"
+option_id = 2000
+monster_id = "970412/970410/970404"
+spawn_rate = 0.011
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-6/-20/-40"
+drop_id = 104
+
+[sub_resource type="Resource" id="Resource_us5vx"]
+script = ExtResource("1_6ki3n")
+id = 980006
+name = "소철 평원"
+next_stage = "980001/980008/980012"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+monster_id = "970106/970103/970204"
+spawn_rate = 0.01
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-8/-22/-40"
+drop_id = 105
+
+[sub_resource type="Resource" id="Resource_x4kwn"]
+script = ExtResource("1_6ki3n")
+id = 980007
+name = "양치식물 습지"
+next_stage = "980001/980011/980016"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+option_id = 2040
+monster_id = "970417/970418/970423"
+spawn_rate = 0.009
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 106
+
+[sub_resource type="Resource" id="Resource_rax0x"]
+script = ExtResource("1_6ki3n")
+id = 980008
+name = "아라우카리아 숲"
+next_stage = "980003/980009/980013"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+monster_id = "970101/970105/970202"
+spawn_rate = 0.011
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-8/-20/-35"
+drop_id = 107
+
+[sub_resource type="Resource" id="Resource_xpfkt"]
+script = ExtResource("1_6ki3n")
+id = 980009
+name = "붉은 협곡"
+next_stage = "980012/980014/980017"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+option_id = 2011
+monster_id = "970302/970204/970205"
+spawn_rate = 0.011
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 108
+
+[sub_resource type="Resource" id="Resource_x5beo"]
+script = ExtResource("1_6ki3n")
+id = 980010
+name = "화산 분화구"
+next_stage = "980015"
+time_to_move_map = "15"
+required_explore = "15"
+option_id = 2031
+monster_id = "970203/970205/970206"
+spawn_rate = 0.012
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-5/-15/-30"
+drop_id = 109
+
+[sub_resource type="Resource" id="Resource_i6t0s"]
+script = ExtResource("1_6ki3n")
+id = 980011
+name = "강 하구 델타"
+next_stage = "980001/980004/980007"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+option_id = 2000
+monster_id = "970412/970425/970409"
+spawn_rate = 0.011
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 110
+
+[sub_resource type="Resource" id="Resource_qt4gu"]
+script = ExtResource("1_6ki3n")
+id = 980012
+name = "건조한 황무지"
+next_stage = "980006/980009/980015"
+time_to_move_map = "15/15/15"
+required_explore = "15/30/45"
+option_id = 2040
+monster_id = "970106/970202/970205"
+spawn_rate = 0.011
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 111
+
+[sub_resource type="Resource" id="Resource_abw3d"]
+script = ExtResource("1_6ki3n")
+id = 980013
+name = "은행나무 군락지"
+next_stage = "980003/980008"
+time_to_move_map = "15/15"
+required_explore = "15/30"
+monster_id = "970103/970107/970301"
+spawn_rate = 0.01
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-8/-20/-35"
+drop_id = 112
+
+[sub_resource type="Resource" id="Resource_b1l14"]
+script = ExtResource("1_6ki3n")
+id = 980014
+name = "깊은 석회암 동굴"
+next_stage = "980009"
+time_to_move_map = "15"
+required_explore = "15"
+option_id = 2021
+monster_id = "970423/970424/970202"
+spawn_rate = 0.012
+spawn_per_rate = "2005/3/2"
+monster_sub_group = "-5/-15/-30"
+drop_id = 113
+
+[sub_resource type="Resource" id="Resource_f3e1x"]
+script = ExtResource("1_6ki3n")
+id = 980015
+name = "간헐천 지대"
+next_stage = "980010/980012"
+time_to_move_map = "15/15"
+required_explore = "15/30"
+option_id = 2031
+monster_id = "970418/970204/970205"
+spawn_rate = 0.011
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 114
+
+[sub_resource type="Resource" id="Resource_5xxuu"]
+script = ExtResource("1_6ki3n")
+id = 980016
+name = "안개 낀 계곡"
+next_stage = "980003/980007"
+time_to_move_map = "15/15"
+required_explore = "15/30"
+option_id = 2040
+monster_id = "970101/970301/970201"
+spawn_rate = 0.01
+spawn_per_rate = "2006/3/1"
+monster_sub_group = "-8/-20/-35"
+drop_id = 115
+
+[sub_resource type="Resource" id="Resource_s4ufm"]
+script = ExtResource("1_6ki3n")
+id = 980017
+name = "공룡 뼈 무덤"
+next_stage = "980009/980012"
+time_to_move_map = "15/15"
+required_explore = "15/30"
+option_id = 2020
+monster_id = "970202/970204/970205"
+spawn_rate = 0.012
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-6/-18/-35"
+drop_id = 116
+
+[sub_resource type="Resource" id="Resource_dgih7"]
+script = ExtResource("1_6ki3n")
+id = 980018
+name = "테티스 해 산호초"
+next_stage = "980005"
+time_to_move_map = "15"
+required_explore = "15"
+monster_id = "970410/970412/970405"
+spawn_rate = 0.012
+spawn_per_rate = "2005/3/1"
+monster_sub_group = "-6/-20/-40"
+drop_id = 117
+
+[resource]
+script = ExtResource("2_d6i5o")
+records = {
+980001: SubResource("Resource_6ki3n"),
+980002: SubResource("Resource_d6i5o"),
+980003: SubResource("Resource_eb6t3"),
+980004: SubResource("Resource_b2cmk"),
+980005: SubResource("Resource_eaigc"),
+980006: SubResource("Resource_us5vx"),
+980007: SubResource("Resource_x4kwn"),
+980008: SubResource("Resource_rax0x"),
+980009: SubResource("Resource_xpfkt"),
+980010: SubResource("Resource_x5beo"),
+980011: SubResource("Resource_i6t0s"),
+980012: SubResource("Resource_qt4gu"),
+980013: SubResource("Resource_abw3d"),
+980014: SubResource("Resource_b1l14"),
+980015: SubResource("Resource_f3e1x"),
+980016: SubResource("Resource_5xxuu"),
+980017: SubResource("Resource_s4ufm"),
+980018: SubResource("Resource_dgih7")
+}

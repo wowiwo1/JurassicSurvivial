@@ -1,0 +1,16 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# If it's a C# project (Optional but good to have)
+.mono/
+.vs/
+*.sln
+*.csproj.user
+
+# Mac/Windows Cache
+.DS_Store
+Thumbs.db
+
+# Security
+credentials/
