@@ -5,11 +5,11 @@ extends EditorPlugin
 const CREDENTIALS_PATH = "res://credentials/credentials.json"
 const SHEET_ID = "1W9w7dGUs-dBSsdPYmA-Oj8_EUYPlqqhzXOjyBOg8KUo"
 const START_CELL = "A6:ZZ" # A6부터 데이터가 존재하는 끝까지 자동으로 잘려서 옵니다.
-const SAVE_DIR = "res://game_table"
-const SAVE_PATH = "res://game_table/game_table.json"
+const SAVE_DIR = "res://assets/game_table"
+const SAVE_PATH = "res://assets/game_table/game_table.json"
 
-const SCRIPT_DIR = "res://game_table/scripts"
-const DATA_DIR = "res://game_table/data"
+const SCRIPT_DIR = "res://assets/game_table/scripts"
+const DATA_DIR = "res://assets/game_table/data"
 # -------------------
 
 var http_auth: HTTPRequest
