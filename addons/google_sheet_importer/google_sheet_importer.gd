@@ -367,7 +367,10 @@ func _generate_resources_from_dict(table_dict: Dictionary):
 	get_editor_interface().get_resource_filesystem().scan()
 	print("🎉 모든 데이터 임포트 작업이 완료되었습니다!")
 	
-	# 사용자 요청 사항: 명시적으로 포커스를 잃도록 OS 단에서 시작 메뉴(Win 키 효과, Ctrl+Esc) 강제 호출.
+	# 사용자 요구 사항: 고도 에디터에 종속된 자식 창이 아닌 아예 외부 프로그램(CMD)을 눈앞에 잠깐 띄워서
+	# 에디터가 화면 바깥으로 완전히 포커스를 잃었다 돌아오게끔 하는 가장 원초적인 꼼수 적용
 	if OS.get_name() == "Windows":
-		var args = PackedStringArray(["-WindowStyle", "Hidden", "-Command", "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('^{ESC}')"])
-		OS.create_process("powershell", args)
+		# CMD 창을 1초간 띄웠다가 자동 종료시킴 (확실한 알트탭 갱신 효과)
+		# 마지막 파라미터 `true`는 콘솔 창을 '생략 없이 화면에 실제로 띄워라(open_console)'라는 필수 옵션입니다!
+		var args = PackedStringArray(["/c", "timeout /t 1 > nul"])
+		OS.create_process("cmd.exe", args, true)
