@@ -2,12 +2,21 @@
 extends EditorPlugin
 
 var connected_nodes: Array[Control] = []
+var last_workspace: String = "2D"
 
 func _enter_tree():
+	main_screen_changed.connect(_on_main_screen_changed)
 	var fs_dock = EditorInterface.get_file_system_dock()
 	_connect_inputs(fs_dock)
 
+func _on_main_screen_changed(screen_name: String):
+	if screen_name in ["2D", "3D"]:
+		last_workspace = screen_name
+
 func _exit_tree():
+	if main_screen_changed.is_connected(_on_main_screen_changed):
+		main_screen_changed.disconnect(_on_main_screen_changed)
+		
 	for node in connected_nodes:
 		if is_instance_valid(node) and node.gui_input.is_connected(_on_gui_input):
 			node.gui_input.disconnect(_on_gui_input)
@@ -76,12 +85,21 @@ func _update_inspector_from_paths(node: Control):
 	
 	# 무거운 파일은 로드하지 않습니다.
 	var ext = path.get_extension().to_lower()
-	if ext in ["tscn", "scn", "glb", "gltf", "obj", "fbx"]: return
+	if ext in []: return
 	
 	var res = ResourceLoader.load(path)
 	if res:
-		# 개발자님의 아이디어: 포커스를 뺏기기 전에 미리 기억해 두었다가
 		EditorInterface.inspect_object(res)
+		
+		# 파일 확장자에 따라 에디터 메인 화면(워크스페이스)을 자동으로 전환합니다.
+		# 주의: Godot 4 API에는 get_editor_main_screen()이 없으므로 직접 추적한 last_workspace 사용
+		
+		if ext in ["tscn", "scn", "tres", "res", "png", "jpg", "wav", "ogg"]:
+			# 씬이나 리소스 선택 시, 이전에 작업하던 2D 또는 3D 뷰로 복귀
+			EditorInterface.set_main_screen_editor(last_workspace)
+		elif ext in ["gd", "cs"]:
+			# 스크립트 선택 시 뷰를 스크립트로 강제 고정 (보통 Godot가 자동 수행함)
+			EditorInterface.set_main_screen_editor("Script")
 		
 		# 인스펙터가 정보를 띄우자마자 파일 시스템으로 즉시 포커스를 돌려놓습니다.
 		if is_instance_valid(node):
