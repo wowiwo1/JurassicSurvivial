@@ -255,8 +255,8 @@ func _generate_resources_from_dict(table_dict: Dictionary):
 		c_file.store_string("extends Resource\nclass_name TableContainer\n\n@export var records: Dictionary = {}\n")
 		c_file.close()
 		
-	# 캐시를 무시하고 스크립트 로드
-	var container_script = ResourceLoader.load(container_script_path, "", ResourceLoader.CACHE_MODE_IGNORE)
+	# 스크립트 로드 (에디터 캐시 갱신을 위해 REPLACE 사용)
+	var container_script = ResourceLoader.load(container_script_path, "", ResourceLoader.CACHE_MODE_REPLACE)
 
 	# 3. 각 시트(Card, Map, Recipe 등) 순회
 	for sheet_name in table_dict.keys():
@@ -363,6 +363,11 @@ func _generate_resources_from_dict(table_dict: Dictionary):
 				if not valid_list.has(base_name) and not valid_list.has(f):
 					d.remove(f)
 
-	# 에디터 파일 시스템 새로고침 (저장된 파일을 인스펙터에 바로 띄우기 위함)
+	# 에디터 파일 시스템 새로고침
 	get_editor_interface().get_resource_filesystem().scan()
 	print("🎉 모든 데이터 임포트 작업이 완료되었습니다!")
+	
+	# 사용자 요청 사항: 명시적으로 포커스를 잃도록 OS 단에서 시작 메뉴(Win 키 효과, Ctrl+Esc) 강제 호출.
+	if OS.get_name() == "Windows":
+		var args = PackedStringArray(["-WindowStyle", "Hidden", "-Command", "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('^{ESC}')"])
+		OS.create_process("powershell", args)

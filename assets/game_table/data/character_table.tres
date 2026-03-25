@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://cqbk1nuhjqlhs"]
+
+[ext_resource type="Script" uid="uid://cixl6swdebwtb" path="res://assets/game_table/scripts/character_data.gd" id="1_oc81j"]
+[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_l0q47"]
+
+[sub_resource type="Resource" id="Resource_oc81j"]
+script = ExtResource("1_oc81j")
+id = 990001
+name = "평범한 직장인"
+initial_map = 980001
+weight = 25
+initial_skills = "5/10/5/20/10"
+starting_cards = "40046"
+hp = 100
+hunger = 100
+thirst = 100
+mental = 100
+sleep = 100
+desc = "비행기 사고로 낯선 원시 세계에 떨어진 한국의 평범한 직장인입니다. 특별한 기술은 없지만 독도법과 사격술, 지뢰, 폭발물, 철조망에 관한 해박한 지식을 갖추고 있습니다."
+
+[sub_resource type="Resource" id="Resource_l0q47"]
+script = ExtResource("1_oc81j")
+id = 990002
+name = "탐사 보도 기자"
+initial_map = 980001
+weight = 15
+initial_skills = "5/25/5/30/10"
+starting_cards = "40046/40001"
+hp = 80
+hunger = 100
+thirst = 100
+mental = 130
+sleep = 100
+desc = "이 섬의 비밀 프로젝트를 추적하던 중 사고에 휘말린 기자입니다. 통찰력이 뛰어나 비밀 정보를 더 빨리 알아내지만 체력이 다소 약합니다."
+
+[sub_resource type="Resource" id="Resource_byfcp"]
+script = ExtResource("1_oc81j")
+id = 990003
+name = "전직 보안 요원"
+initial_map = 980001
+weight = 30
+initial_skills = "20/10/25/10/20"
+starting_cards = "50049"
+hp = 120
+hunger = 110
+thirst = 110
+mental = 80
+sleep = 100
+desc = "과거 실험 단체의 보안팀이었으나 실상을 알고 탈출을 시도했습니다. 높은 전투력과 공룡에 대한 지식을 가졌으나 과거의 트라우마로 정신력이 불안정합니다."
+
+[resource]
+script = ExtResource("2_l0q47")
+records = {
+990001: SubResource("Resource_oc81j"),
+990002: SubResource("Resource_l0q47"),
+990003: SubResource("Resource_byfcp")
+}

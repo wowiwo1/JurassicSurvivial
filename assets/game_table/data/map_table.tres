@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dyobsy5lyxxos" path="res://assets/game_table/scripts/map_data.gd" id="1_71ekw"]
 [ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_yimww"]
 
-[sub_resource type="Resource" id="Resource_iprh5"]
+[sub_resource type="Resource" id="Resource_71ekw"]
 script = ExtResource("1_71ekw")
 id = 980001
 name = "범람원"
@@ -16,7 +16,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-12/-25/-40"
 drop_id = 100
 
-[sub_resource type="Resource" id="Resource_xd1tg"]
+[sub_resource type="Resource" id="Resource_yimww"]
 script = ExtResource("1_71ekw")
 id = 980002
 name = "해안가 절벽"
@@ -30,7 +30,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-8/-22/-40"
 drop_id = 101
 
-[sub_resource type="Resource" id="Resource_c7gso"]
+[sub_resource type="Resource" id="Resource_iprh5"]
 script = ExtResource("1_71ekw")
 id = 980003
 name = "울창한 숲"
@@ -43,7 +43,7 @@ spawn_per_rate = "2005/3/1"
 monster_sub_group = "-8/-20/-35"
 drop_id = 102
 
-[sub_resource type="Resource" id="Resource_ydx5p"]
+[sub_resource type="Resource" id="Resource_xd1tg"]
 script = ExtResource("1_71ekw")
 id = 980004
 name = "진흙 갯벌 해변"
@@ -57,7 +57,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 103
 
-[sub_resource type="Resource" id="Resource_i3cp6"]
+[sub_resource type="Resource" id="Resource_c7gso"]
 script = ExtResource("1_71ekw")
 id = 980005
 name = "석호"
@@ -71,7 +71,7 @@ spawn_per_rate = "2005/3/1"
 monster_sub_group = "-6/-20/-40"
 drop_id = 104
 
-[sub_resource type="Resource" id="Resource_iq4xl"]
+[sub_resource type="Resource" id="Resource_ydx5p"]
 script = ExtResource("1_71ekw")
 id = 980006
 name = "소철 평원"
@@ -84,7 +84,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-8/-22/-40"
 drop_id = 105
 
-[sub_resource type="Resource" id="Resource_pigwq"]
+[sub_resource type="Resource" id="Resource_i3cp6"]
 script = ExtResource("1_71ekw")
 id = 980007
 name = "양치식물 습지"
@@ -98,7 +98,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 106
 
-[sub_resource type="Resource" id="Resource_d4tge"]
+[sub_resource type="Resource" id="Resource_iq4xl"]
 script = ExtResource("1_71ekw")
 id = 980008
 name = "아라우카리아 숲"
@@ -111,7 +111,7 @@ spawn_per_rate = "2005/3/1"
 monster_sub_group = "-8/-20/-35"
 drop_id = 107
 
-[sub_resource type="Resource" id="Resource_r0iby"]
+[sub_resource type="Resource" id="Resource_pigwq"]
 script = ExtResource("1_71ekw")
 id = 980009
 name = "붉은 협곡"
@@ -125,7 +125,7 @@ spawn_per_rate = "2005/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 108
 
-[sub_resource type="Resource" id="Resource_nciwj"]
+[sub_resource type="Resource" id="Resource_d4tge"]
 script = ExtResource("1_71ekw")
 id = 980010
 name = "화산 분화구"
@@ -139,7 +139,7 @@ spawn_per_rate = "2005/3/1"
 monster_sub_group = "-5/-15/-30"
 drop_id = 109
 
-[sub_resource type="Resource" id="Resource_se5p0"]
+[sub_resource type="Resource" id="Resource_r0iby"]
 script = ExtResource("1_71ekw")
 id = 980011
 name = "강 하구 델타"
@@ -153,7 +153,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 110
 
-[sub_resource type="Resource" id="Resource_o2dlm"]
+[sub_resource type="Resource" id="Resource_nciwj"]
 script = ExtResource("1_71ekw")
 id = 980012
 name = "건조한 황무지"
@@ -167,7 +167,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 111
 
-[sub_resource type="Resource" id="Resource_h5ds8"]
+[sub_resource type="Resource" id="Resource_se5p0"]
 script = ExtResource("1_71ekw")
 id = 980013
 name = "은행나무 군락지"
@@ -180,7 +180,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-8/-20/-35"
 drop_id = 112
 
-[sub_resource type="Resource" id="Resource_mkk5i"]
+[sub_resource type="Resource" id="Resource_o2dlm"]
 script = ExtResource("1_71ekw")
 id = 980014
 name = "깊은 석회암 동굴"
@@ -194,7 +194,7 @@ spawn_per_rate = "2005/3/2"
 monster_sub_group = "-5/-15/-30"
 drop_id = 113
 
-[sub_resource type="Resource" id="Resource_bwn5m"]
+[sub_resource type="Resource" id="Resource_h5ds8"]
 script = ExtResource("1_71ekw")
 id = 980015
 name = "간헐천 지대"
@@ -208,7 +208,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 114
 
-[sub_resource type="Resource" id="Resource_d86v6"]
+[sub_resource type="Resource" id="Resource_mkk5i"]
 script = ExtResource("1_71ekw")
 id = 980016
 name = "안개 낀 계곡"
@@ -222,7 +222,7 @@ spawn_per_rate = "2006/3/1"
 monster_sub_group = "-8/-20/-35"
 drop_id = 115
 
-[sub_resource type="Resource" id="Resource_dcmub"]
+[sub_resource type="Resource" id="Resource_bwn5m"]
 script = ExtResource("1_71ekw")
 id = 980017
 name = "공룡 뼈 무덤"
@@ -236,7 +236,7 @@ spawn_per_rate = "2005/3/1"
 monster_sub_group = "-6/-18/-35"
 drop_id = 116
 
-[sub_resource type="Resource" id="Resource_4ctcx"]
+[sub_resource type="Resource" id="Resource_d86v6"]
 script = ExtResource("1_71ekw")
 id = 980018
 name = "테티스 해 산호초"
@@ -252,22 +252,22 @@ drop_id = 117
 [resource]
 script = ExtResource("2_yimww")
 records = {
-980001: SubResource("Resource_iprh5"),
-980002: SubResource("Resource_xd1tg"),
-980003: SubResource("Resource_c7gso"),
-980004: SubResource("Resource_ydx5p"),
-980005: SubResource("Resource_i3cp6"),
-980006: SubResource("Resource_iq4xl"),
-980007: SubResource("Resource_pigwq"),
-980008: SubResource("Resource_d4tge"),
-980009: SubResource("Resource_r0iby"),
-980010: SubResource("Resource_nciwj"),
-980011: SubResource("Resource_se5p0"),
-980012: SubResource("Resource_o2dlm"),
-980013: SubResource("Resource_h5ds8"),
-980014: SubResource("Resource_mkk5i"),
-980015: SubResource("Resource_bwn5m"),
-980016: SubResource("Resource_d86v6"),
-980017: SubResource("Resource_dcmub"),
-980018: SubResource("Resource_4ctcx")
+980001: SubResource("Resource_71ekw"),
+980002: SubResource("Resource_yimww"),
+980003: SubResource("Resource_iprh5"),
+980004: SubResource("Resource_xd1tg"),
+980005: SubResource("Resource_c7gso"),
+980006: SubResource("Resource_ydx5p"),
+980007: SubResource("Resource_i3cp6"),
+980008: SubResource("Resource_iq4xl"),
+980009: SubResource("Resource_pigwq"),
+980010: SubResource("Resource_d4tge"),
+980011: SubResource("Resource_r0iby"),
+980012: SubResource("Resource_nciwj"),
+980013: SubResource("Resource_se5p0"),
+980014: SubResource("Resource_o2dlm"),
+980015: SubResource("Resource_h5ds8"),
+980016: SubResource("Resource_mkk5i"),
+980017: SubResource("Resource_bwn5m"),
+980018: SubResource("Resource_d86v6")
 }

@@ -1,0 +1,625 @@
+[gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://dfy140g026qwq"]
+
+[ext_resource type="Script" uid="uid://c141xnruood2t" path="res://assets/game_table/scripts/action_data.gd" id="1_m104p"]
+[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_5q165"]
+
+[sub_resource type="Resource" id="Resource_m104p"]
+script = ExtResource("1_m104p")
+id = 970101
+name = "캄프토사우루스"
+type = 1
+spawn_season = "1/2"
+risk = 30
+hp = 12
+atk = 6
+def = 3
+desc = "숲 가장자리에서 풀을 뜯는 초식 공룡입니다. 겁이 많아 달아나려 합니다."
+
+[sub_resource type="Resource" id="Resource_5q165"]
+script = ExtResource("1_m104p")
+id = 970102
+name = "스테고사우루스"
+type = 1
+risk = 55
+hp = 20
+atk = 14
+def = 8
+desc = "등판과 꼬리 가시로 무장한 초식 공룡입니다. 가까이 다가가면 위험합니다."
+
+[sub_resource type="Resource" id="Resource_5k2br"]
+script = ExtResource("1_m104p")
+id = 970103
+name = "드리오사우루스"
+type = 1
+spawn_season = "1/2"
+risk = 25
+hp = 8
+atk = 4
+def = 2
+desc = "풀숲을 빠르게 오가는 소형 초식 공룡입니다. 경계심이 강합니다."
+
+[sub_resource type="Resource" id="Resource_48lam"]
+script = ExtResource("1_m104p")
+id = 970104
+name = "켄트로사우루스"
+type = 1
+risk = 50
+hp = 16
+atk = 12
+def = 7
+desc = "등과 꼬리에 가시가 많은 스테고사우루스류입니다. 방어력이 높습니다."
+
+[sub_resource type="Resource" id="Resource_8nny3"]
+script = ExtResource("1_m104p")
+id = 970105
+name = "스켈리도사우루스"
+type = 1
+spawn_season = "2"
+risk = 40
+hp = 14
+atk = 8
+def = 6
+desc = "갑옷 같은 피부로 덮인 초기 장갑 공룡입니다. 쉽게 쓰러지지 않습니다."
+
+[sub_resource type="Resource" id="Resource_toot6"]
+script = ExtResource("1_m104p")
+id = 970106
+name = "헤테로돈토사우루스"
+type = 1
+risk = 18
+hp = 5
+atk = 3
+def = 1
+desc = "이빨 형태가 다양한 소형 공룡입니다. 잡식에 가깝습니다."
+
+[sub_resource type="Resource" id="Resource_4fjug"]
+script = ExtResource("1_m104p")
+id = 970107
+name = "레소토사우루스"
+type = 1
+risk = 15
+hp = 4
+atk = 2
+def = 1
+desc = "가볍고 빠른 소형 초식 공룡입니다. 소리를 듣고 달아납니다."
+
+[sub_resource type="Resource" id="Resource_jncq0"]
+script = ExtResource("1_m104p")
+id = 970201
+name = "콤프소그나투스"
+type = 2
+risk = 35
+hp = 6
+atk = 6
+def = 1
+desc = "작고 빠른 소형 육식 공룡입니다. 떼로 다니면 성가십니다."
+
+[sub_resource type="Resource" id="Resource_bkqd4"]
+script = ExtResource("1_m104p")
+id = 970202
+name = "오르니톨레스테스"
+type = 2
+risk = 40
+hp = 7
+atk = 7
+def = 2
+desc = "새처럼 민첩한 소형 포식자입니다. 방심하면 물립니다."
+
+[sub_resource type="Resource" id="Resource_xevam"]
+script = ExtResource("1_m104p")
+id = 970203
+name = "켈루루스"
+type = 2
+risk = 35
+hp = 6
+atk = 6
+def = 1
+desc = "가늘고 긴 몸의 소형 육식 공룡입니다. 그림자처럼 접근합니다."
+
+[sub_resource type="Resource" id="Resource_6awrh"]
+script = ExtResource("1_m104p")
+id = 970204
+name = "딜로포사우루스"
+type = 2
+spawn_season = "1/2"
+risk = 65
+hp = 14
+atk = 18
+def = 5
+desc = "머리의 볏이 특징인 중형 포식자입니다. 위협하면 공격합니다."
+
+[sub_resource type="Resource" id="Resource_mp8f4"]
+script = ExtResource("1_m104p")
+id = 970205
+name = "케라토사우루스"
+type = 2
+spawn_season = "1"
+risk = 75
+hp = 18
+atk = 24
+def = 7
+desc = "코뿔처럼 튀어나온 뿔이 있는 육식 공룡입니다. 습지 근처에서 자주 보입니다."
+
+[sub_resource type="Resource" id="Resource_hfty1"]
+script = ExtResource("1_m104p")
+id = 970206
+name = "토르보사우루스"
+type = 2
+risk = 85
+hp = 24
+atk = 30
+def = 9
+desc = "거대한 턱을 가진 대형 포식자입니다. 한 번 물리면 치명적입니다."
+
+[sub_resource type="Resource" id="Resource_dlb6m"]
+script = ExtResource("1_m104p")
+id = 970207
+name = "메갈로사우루스"
+type = 2
+risk = 80
+hp = 20
+atk = 26
+def = 8
+desc = "대형 육식 공룡입니다. 영역을 침범하면 거칠게 달려듭니다."
+
+[sub_resource type="Resource" id="Resource_gae65"]
+script = ExtResource("1_m104p")
+id = 970301
+name = "아누로그나투스"
+type = 3
+spawn_season = "1/2"
+risk = 12
+hp = 3
+atk = 2
+desc = "곤충을 쫓아다니는 작은 익룡입니다. 어둠 속에서 갑자기 날아오릅니다."
+
+[sub_resource type="Resource" id="Resource_tu65k"]
+script = ExtResource("1_m104p")
+id = 970302
+name = "프테로닥틸루스"
+type = 3
+risk = 30
+hp = 7
+atk = 6
+def = 1
+desc = "해안 절벽 주변을 선회하는 익룡입니다. 기회를 보며 급강하합니다."
+
+[sub_resource type="Resource" id="Resource_astau"]
+script = ExtResource("1_m104p")
+id = 970303
+name = "람포린쿠스"
+type = 3
+risk = 25
+hp = 6
+atk = 5
+def = 1
+desc = "긴 꼬리를 가진 익룡입니다. 물고기를 낚아채듯 사냥합니다."
+
+[sub_resource type="Resource" id="Resource_awwwj"]
+script = ExtResource("1_m104p")
+id = 970304
+name = "디모르포돈"
+type = 3
+spawn_season = "2"
+risk = 28
+hp = 7
+atk = 7
+def = 1
+desc = "머리가 큰 소형 익룡입니다. 짧은 거리에서 돌연 공격합니다."
+
+[sub_resource type="Resource" id="Resource_6w0nn"]
+script = ExtResource("1_m104p")
+id = 970305
+name = "게르마노닥틸루스"
+type = 3
+risk = 22
+hp = 5
+atk = 4
+def = 1
+desc = "날개 끝이 날카로운 익룡입니다. 바람을 타고 접근합니다."
+
+[sub_resource type="Resource" id="Resource_n35lm"]
+script = ExtResource("1_m104p")
+id = 970401
+name = "원시 투구게"
+type = 4
+risk = 5
+hp = 2
+atk = 1
+def = 1
+desc = "갯벌의 얕은 물에서 느리게 기어다니는 원시 절지동물입니다."
+
+[sub_resource type="Resource" id="Resource_w64l4"]
+script = ExtResource("1_m104p")
+id = 970402
+name = "아르케옵테릭스"
+type = 4
+risk = 10
+hp = 2
+atk = 1
+desc = "깃털이 달린 초기 조류입니다. 놀라면 재빨리 날아오릅니다."
+
+[sub_resource type="Resource" id="Resource_4juk3"]
+script = ExtResource("1_m104p")
+id = 970403
+name = "오프탈모사우루스"
+type = 4
+risk = 60
+hp = 18
+atk = 16
+def = 6
+desc = "큰 눈을 가진 어룡입니다. 물속에서 빠르게 돌진합니다."
+
+[sub_resource type="Resource" id="Resource_mm4gq"]
+script = ExtResource("1_m104p")
+id = 970404
+name = "이크티오사우루스"
+type = 4
+risk = 45
+hp = 14
+atk = 12
+def = 4
+desc = "돌고래처럼 유영하는 어룡입니다. 무리를 이루기도 합니다."
+
+[sub_resource type="Resource" id="Resource_udfmx"]
+script = ExtResource("1_m104p")
+id = 970405
+name = "플레시오사우루스"
+type = 4
+risk = 55
+hp = 18
+atk = 18
+def = 6
+desc = "긴 목을 가진 해양 파충류입니다. 수면 아래에서 기다립니다."
+
+[sub_resource type="Resource" id="Resource_5m0cg"]
+script = ExtResource("1_m104p")
+id = 970406
+name = "크립토클리두스"
+type = 4
+risk = 35
+hp = 12
+atk = 10
+def = 4
+desc = "온순한 편의 플레시오사우루스류입니다. 위협하면 도망칩니다."
+
+[sub_resource type="Resource" id="Resource_k2w67"]
+script = ExtResource("1_m104p")
+id = 970407
+name = "리오플레우로돈"
+type = 4
+risk = 95
+hp = 28
+atk = 38
+def = 12
+desc = "거대한 바다 포식자입니다. 물가에 있으면 매우 위험합니다."
+
+[sub_resource type="Resource" id="Resource_f6ydi"]
+script = ExtResource("1_m104p")
+id = 970408
+name = "메트리오린쿠스"
+type = 4
+spawn_season = "1/2"
+risk = 70
+hp = 20
+atk = 22
+def = 8
+desc = "바다에 적응한 악어류입니다. 물속에서 기습합니다."
+
+[sub_resource type="Resource" id="Resource_1c5dw"]
+script = ExtResource("1_m104p")
+id = 970409
+name = "텔레오사우루스"
+type = 4
+spawn_season = "1/2"
+risk = 45
+hp = 14
+atk = 12
+def = 5
+desc = "긴 주둥이의 원시 악어입니다. 얕은 물에서 매복합니다."
+
+[sub_resource type="Resource" id="Resource_8kxr6"]
+script = ExtResource("1_m104p")
+id = 970410
+name = "암모나이트"
+type = 4
+risk = 8
+hp = 2
+atk = 1
+def = 1
+desc = "나선형 껍데기의 해양 무척추동물입니다. 움직임이 느립니다."
+
+[sub_resource type="Resource" id="Resource_bjetk"]
+script = ExtResource("1_m104p")
+id = 970411
+name = "벨렘나이트"
+type = 4
+risk = 6
+hp = 1
+atk = 1
+desc = "오징어 같은 원시 두족류입니다. 순식간에 방향을 바꿉니다."
+
+[sub_resource type="Resource" id="Resource_agpqh"]
+script = ExtResource("1_m104p")
+id = 970412
+name = "레피도테스"
+type = 4
+risk = 12
+hp = 3
+atk = 2
+def = 1
+desc = "두꺼운 비늘을 가진 원시 물고기입니다. 잡기 어렵습니다."
+
+[sub_resource type="Resource" id="Resource_nhot4"]
+script = ExtResource("1_m104p")
+id = 970413
+name = "하이보두스"
+type = 4
+risk = 40
+hp = 10
+atk = 12
+def = 3
+desc = "등지느러미 가시가 있는 원시 상어입니다. 피 냄새에 민감합니다."
+
+[sub_resource type="Resource" id="Resource_5b48f"]
+script = ExtResource("1_m104p")
+id = 970414
+name = "모르가누코돈"
+type = 4
+spawn_season = "2"
+risk = 5
+hp = 1
+atk = 1
+desc = "쥐만 한 초기 포유류입니다. 밤에 몰래 먹이를 찾습니다."
+
+[sub_resource type="Resource" id="Resource_scthg"]
+script = ExtResource("1_m104p")
+id = 970415
+name = "도코돈"
+type = 4
+risk = 6
+hp = 2
+atk = 1
+desc = "수풀 속을 빠르게 오가는 소형 포유류입니다. 재빨리 숨습니다."
+
+[sub_resource type="Resource" id="Resource_0dqhn"]
+script = ExtResource("1_m104p")
+id = 970416
+name = "주라마이아"
+type = 4
+risk = 7
+hp = 2
+atk = 1
+desc = "나뭇가지 위를 타는 작은 포유류입니다. 민첩합니다."
+
+[sub_resource type="Resource" id="Resource_i7x5e"]
+script = ExtResource("1_m104p")
+id = 970417
+name = "원시 개구리"
+type = 4
+spawn_season = "1"
+risk = 4
+hp = 1
+atk = 1
+desc = "비가 오면 웅덩이 주변에 나타나는 작은 양서류입니다."
+
+[sub_resource type="Resource" id="Resource_hecdb"]
+script = ExtResource("1_m104p")
+id = 970418
+name = "원시 도롱뇽"
+type = 4
+spawn_season = "1"
+risk = 4
+hp = 1
+atk = 1
+desc = "습한 그늘과 낙엽 아래에 숨어있는 양서류입니다."
+
+[sub_resource type="Resource" id="Resource_4fy0p"]
+script = ExtResource("1_m104p")
+id = 970419
+name = "원시 도마뱀"
+type = 4
+spawn_season = "2"
+risk = 6
+hp = 2
+atk = 1
+desc = "돌 틈을 오가는 작은 파충류입니다. 손을 뻗으면 재빨리 달아납니다."
+
+[sub_resource type="Resource" id="Resource_6417p"]
+script = ExtResource("1_m104p")
+id = 970420
+name = "거대 바퀴벌레"
+type = 4
+spawn_season = "1/2"
+risk = 8
+hp = 2
+atk = 1
+desc = "썩은 낙엽 더미에서 우글거립니다. 위생에 좋지 않아 보입니다."
+
+[sub_resource type="Resource" id="Resource_yfxuy"]
+script = ExtResource("1_m104p")
+id = 970421
+name = "원시 딱정벌레"
+type = 4
+risk = 9
+hp = 2
+atk = 2
+def = 1
+desc = "단단한 갑각을 가진 곤충입니다. 발에 밟히면 상처가 날 수 있습니다."
+
+[sub_resource type="Resource" id="Resource_jmgq6"]
+script = ExtResource("1_m104p")
+id = 970422
+name = "원시 잠자리"
+type = 4
+spawn_season = "1"
+risk = 10
+hp = 2
+atk = 2
+desc = "물가에서 날아다니며 작은 벌레를 사냥합니다."
+
+[sub_resource type="Resource" id="Resource_wp3sq"]
+script = ExtResource("1_m104p")
+id = 970423
+name = "원시 거미"
+type = 4
+risk = 15
+hp = 3
+atk = 3
+desc = "그물에 걸린 먹이를 기다립니다. 가까이 가면 물 수 있습니다."
+
+[sub_resource type="Resource" id="Resource_bwu5m"]
+script = ExtResource("1_m104p")
+id = 970424
+name = "원시 전갈"
+type = 4
+spawn_season = "2"
+risk = 20
+hp = 4
+atk = 4
+def = 1
+desc = "바위 아래에 숨어 있다가 독침을 휘두릅니다."
+
+[sub_resource type="Resource" id="Resource_mo7io"]
+script = ExtResource("1_m104p")
+id = 970425
+name = "원시 게"
+type = 4
+risk = 12
+hp = 3
+atk = 2
+def = 2
+desc = "바닷가 바위 틈을 빠르게 옮겨 다니는 작은 갑각류입니다."
+
+[sub_resource type="Resource" id="Resource_676ir"]
+script = ExtResource("1_m104p")
+id = 970426
+name = "원시 조개"
+type = 4
+risk = 3
+hp = 2
+atk = 1
+def = 3
+desc = "바위에 붙어있는 조개입니다. 채집하기 좋아 보입니다."
+
+[sub_resource type="Resource" id="Resource_w885d"]
+script = ExtResource("1_m104p")
+id = 979901
+name = "알로사우루스 아낙스"
+type = 99
+risk = 100
+hp = 35
+atk = 45
+def = 14
+desc = "알로사우루스류로 분류되는 초대형 포식자입니다. 마주치면 도망치는 것이 상책입니다."
+
+[sub_resource type="Resource" id="Resource_fmq87"]
+script = ExtResource("1_m104p")
+id = 979902
+name = "브라키오사우루스"
+type = 99
+risk = 80
+hp = 40
+atk = 16
+def = 12
+desc = "긴 목으로 높은 나뭇잎을 먹는 거대한 초식 공룡입니다."
+
+[sub_resource type="Resource" id="Resource_aaki8"]
+script = ExtResource("1_m104p")
+id = 979903
+name = "디플로도쿠스"
+type = 99
+risk = 75
+hp = 38
+atk = 14
+def = 11
+desc = "채찍 같은 꼬리를 휘두르는 대형 초식 공룡입니다."
+
+[sub_resource type="Resource" id="Resource_rpgqc"]
+script = ExtResource("1_m104p")
+id = 979904
+name = "아파토사우루스"
+type = 99
+risk = 78
+hp = 36
+atk = 15
+def = 12
+desc = "둔중하지만 압도적인 체구를 가진 초식 공룡입니다. 발굽에 밟히면 위험합니다."
+
+[sub_resource type="Resource" id="Resource_0lycs"]
+script = ExtResource("1_m104p")
+id = 979905
+name = "바로사우루스"
+type = 99
+risk = 82
+hp = 42
+atk = 17
+def = 13
+desc = "목이 유난히 긴 거대 초식 공룡입니다. 움직임이 느리지만 위압적입니다."
+
+[sub_resource type="Resource" id="Resource_xwoxe"]
+script = ExtResource("1_m104p")
+id = 979906
+name = "카마라사우루스"
+type = 99
+risk = 77
+hp = 34
+atk = 14
+def = 11
+desc = "통통한 몸집의 대형 초식 공룡입니다. 무리를 지어 이동합니다."
+
+[resource]
+script = ExtResource("2_5q165")
+records = {
+970101: SubResource("Resource_m104p"),
+970102: SubResource("Resource_5q165"),
+970103: SubResource("Resource_5k2br"),
+970104: SubResource("Resource_48lam"),
+970105: SubResource("Resource_8nny3"),
+970106: SubResource("Resource_toot6"),
+970107: SubResource("Resource_4fjug"),
+970201: SubResource("Resource_jncq0"),
+970202: SubResource("Resource_bkqd4"),
+970203: SubResource("Resource_xevam"),
+970204: SubResource("Resource_6awrh"),
+970205: SubResource("Resource_mp8f4"),
+970206: SubResource("Resource_hfty1"),
+970207: SubResource("Resource_dlb6m"),
+970301: SubResource("Resource_gae65"),
+970302: SubResource("Resource_tu65k"),
+970303: SubResource("Resource_astau"),
+970304: SubResource("Resource_awwwj"),
+970305: SubResource("Resource_6w0nn"),
+970401: SubResource("Resource_n35lm"),
+970402: SubResource("Resource_w64l4"),
+970403: SubResource("Resource_4juk3"),
+970404: SubResource("Resource_mm4gq"),
+970405: SubResource("Resource_udfmx"),
+970406: SubResource("Resource_5m0cg"),
+970407: SubResource("Resource_k2w67"),
+970408: SubResource("Resource_f6ydi"),
+970409: SubResource("Resource_1c5dw"),
+970410: SubResource("Resource_8kxr6"),
+970411: SubResource("Resource_bjetk"),
+970412: SubResource("Resource_agpqh"),
+970413: SubResource("Resource_nhot4"),
+970414: SubResource("Resource_5b48f"),
+970415: SubResource("Resource_scthg"),
+970416: SubResource("Resource_0dqhn"),
+970417: SubResource("Resource_i7x5e"),
+970418: SubResource("Resource_hecdb"),
+970419: SubResource("Resource_4fy0p"),
+970420: SubResource("Resource_6417p"),
+970421: SubResource("Resource_yfxuy"),
+970422: SubResource("Resource_jmgq6"),
+970423: SubResource("Resource_wp3sq"),
+970424: SubResource("Resource_bwu5m"),
+970425: SubResource("Resource_mo7io"),
+970426: SubResource("Resource_676ir"),
+979901: SubResource("Resource_w885d"),
+979902: SubResource("Resource_fmq87"),
+979903: SubResource("Resource_aaki8"),
+979904: SubResource("Resource_rpgqc"),
+979905: SubResource("Resource_0lycs"),
+979906: SubResource("Resource_xwoxe")
+}
