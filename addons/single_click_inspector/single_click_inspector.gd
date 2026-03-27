@@ -135,8 +135,11 @@ func _update_inspector_from_paths(node: Control):
 				# 스크립트를 실제로 열어주기를 원하시는 뉘앙스라면 주석을 해제하세요:
 				# EditorInterface.edit_resource(res) 
 			else:
-				# 내부 에디터 사용 시에만 Script 뷰로 강제 고정
+				# 내부 에디터 사용 시에만 Script 뷰로 자동 전환
 				EditorInterface.set_main_screen_editor("Script")
+				# 단일 클릭/화살표 선택 시마다 내부 스크립트 창의 내용물(에디터 뷰)도 즉시 갱신합니다!
+				if res is Script:
+					EditorInterface.edit_script(res, -1, 0, false) # 포커스는 계속 파일시스템에 남아있도록 false 전달
 		
 		# 인스펙터가 정보를 띄우자마자 파일 시스템으로 즉시 포커스를 돌려놓습니다.
 		if is_instance_valid(node):
