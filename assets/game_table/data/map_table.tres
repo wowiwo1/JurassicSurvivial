@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://xylgsirxbnfi"]
 
-[ext_resource type="Script" uid="uid://dyobsy5lyxxos" path="res://assets/game_table/scripts/map_data.gd" id="1_71ekw"]
-[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_yimww"]
+[ext_resource type="Script" uid="uid://cfyh0x6nbxopx" path="res://assets/game_table/scripts/map_data.gd" id="1_71ekw"]
+[ext_resource type="Script" uid="uid://0mkjf82o6rtg" path="res://assets/game_table/scripts/table_container.gd" id="2_yimww"]
 
 [sub_resource type="Resource" id="Resource_71ekw"]
 script = ExtResource("1_71ekw")

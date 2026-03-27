@@ -312,8 +312,24 @@ func _generate_resources_from_dict(table_dict: Dictionary):
 		var row_script = ResourceLoader.load(script_path, "", ResourceLoader.CACHE_MODE_IGNORE)
 		
 		# --- B. 리소스(.tres) 인스턴스화 및 데이터 채우기 ---
-		var table_resource = container_script.new()
+		var r_file_name = "%s_table.tres" % sheet_name.to_snake_case()
+		valid_data_files.append(r_file_name)
+		var res_path = DATA_DIR + "/" + r_file_name
 		
+		# 기존 파일 저장 시 전역 UID가 파괴되고 새로 생성되는 문제를 막기 위해,
+		# 파일이 이미 존재한다면 기존 껍데기(Resource 오브젝트) 자체를 불러와서 재활용합니다!
+		var table_resource = null
+		if FileAccess.file_exists(res_path):
+			var loaded_res = ResourceLoader.load(res_path, "", ResourceLoader.CACHE_MODE_IGNORE)
+			# 로드된 객체가 정상이고 records 딕셔너리를 포함하고 있다면 통과
+			if loaded_res and "records" in loaded_res:
+				table_resource = loaded_res
+				
+		if table_resource == null:
+			table_resource = container_script.new()
+		else:
+			table_resource.records.clear() # UID 보존을 위해 가져온 기존 객체 안의 알맹이 내용물만 싹 비웁니다.
+
 		for i in range(1, rows.size()):
 			var row_data = rows[i]
 			var row_instance = row_script.new()
@@ -344,11 +360,7 @@ func _generate_resources_from_dict(table_dict: Dictionary):
 				table_resource.records[primary_key] = row_instance
 				
 		# --- C. 최종 .tres 파일 저장 ---
-		var r_file_name = "%s_table.tres" % sheet_name.to_snake_case()
-		valid_data_files.append(r_file_name)
-		var res_path = DATA_DIR + "/" + r_file_name
-		
-		# Godot 4의 ResourceSaver는 파일이 존재할 경우 기존 파일의 UID를 유지하면서 속성만 업데이트합니다.
+		# table_resource가 방금 로드된 '원본' 상태이므로, ResourceSaver는 새 UID를 덮어씌우지 않고 원래 UID를 100% 유지합니다!
 		ResourceSaver.save(table_resource, res_path)
 		print("✅ 리소스 구워짐: ", res_path)
 

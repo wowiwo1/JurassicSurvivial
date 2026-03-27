@@ -1,59 +1,59 @@
 [gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://dfy140g026qwq"]
 
-[ext_resource type="Script" uid="uid://c141xnruood2t" path="res://assets/game_table/scripts/action_data.gd" id="1_m104p"]
-[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_5q165"]
+[ext_resource type="Script" uid="uid://deqcfttrv5kij" path="res://assets/game_table/scripts/action_data.gd" id="1_m104p"]
+[ext_resource type="Script" uid="uid://0mkjf82o6rtg" path="res://assets/game_table/scripts/table_container.gd" id="2_5q165"]
 
-[sub_resource type="Resource" id="Resource_5k2br"]
+[sub_resource type="Resource" id="Resource_m104p"]
 script = ExtResource("1_m104p")
 id = 1
 operation = "Choice"
 name = "선택지"
 
-[sub_resource type="Resource" id="Resource_48lam"]
+[sub_resource type="Resource" id="Resource_5q165"]
 script = ExtResource("1_m104p")
 id = 2
 operation = "Choice"
 name = "선택지"
 
-[sub_resource type="Resource" id="Resource_8nny3"]
+[sub_resource type="Resource" id="Resource_5k2br"]
 script = ExtResource("1_m104p")
 id = 60
 operation = "Use_Tool"
 name = "도구 사용"
 desc = "도구/소모품을 사용해 상황을 유리하게 만듭니다."
 
-[sub_resource type="Resource" id="Resource_toot6"]
+[sub_resource type="Resource" id="Resource_48lam"]
 script = ExtResource("1_m104p")
 id = 300
 operation = "Acquire"
 name = "획득하기"
 
-[sub_resource type="Resource" id="Resource_4fjug"]
+[sub_resource type="Resource" id="Resource_8nny3"]
 script = ExtResource("1_m104p")
 id = 301
 operation = "Leave"
 name = "버리고가기"
 
-[sub_resource type="Resource" id="Resource_jncq0"]
+[sub_resource type="Resource" id="Resource_toot6"]
 script = ExtResource("1_m104p")
 id = 302
 operation = "Escape"
 name = "도망치기"
 action_id = "303/304"
 
-[sub_resource type="Resource" id="Resource_bkqd4"]
+[sub_resource type="Resource" id="Resource_4fjug"]
 script = ExtResource("1_m104p")
 id = 303
 operation = "Fight"
 name = "싸우기"
 
-[sub_resource type="Resource" id="Resource_xevam"]
+[sub_resource type="Resource" id="Resource_jncq0"]
 script = ExtResource("1_m104p")
 id = 304
 operation = "Escape_Success"
 name = "도망성공"
 
-[sub_resource type="Resource" id="Resource_6awrh"]
+[sub_resource type="Resource" id="Resource_bkqd4"]
 script = ExtResource("1_m104p")
 id = 320
 operation = "Choice"
@@ -61,7 +61,7 @@ name = "선택지"
 desc = "물웅덩이 가장자리, 풀잎 위에 작은 개구리가 멍하니 앉아 있다."
 action_id = "330/331"
 
-[sub_resource type="Resource" id="Resource_mp8f4"]
+[sub_resource type="Resource" id="Resource_xevam"]
 script = ExtResource("1_m104p")
 id = 321
 operation = "Choice"
@@ -69,7 +69,7 @@ name = "선택지"
 desc = "축축한 낙엽 더미에서 도롱뇽 한 마리가 느릿느릿 기어 나온다."
 action_id = "335/336"
 
-[sub_resource type="Resource" id="Resource_hfty1"]
+[sub_resource type="Resource" id="Resource_6awrh"]
 script = ExtResource("1_m104p")
 id = 322
 operation = "Choice"
@@ -77,7 +77,7 @@ name = "선택지"
 desc = "볕 드는 돌 위에서 작은 도마뱀이 눈을 깜빡이고 있다."
 action_id = "343/344"
 
-[sub_resource type="Resource" id="Resource_dlb6m"]
+[sub_resource type="Resource" id="Resource_mp8f4"]
 script = ExtResource("1_m104p")
 id = 330
 operation = "Sneak"
@@ -85,7 +85,7 @@ name = "숨죽이기"
 desc = "숨을 죽이고 낮은 자세로 다가간다. 녀석이 파리를 쫓느라 한눈을 판다."
 action_id = "332/333"
 
-[sub_resource type="Resource" id="Resource_gae65"]
+[sub_resource type="Resource" id="Resource_hfty1"]
 script = ExtResource("1_m104p")
 id = 331
 operation = "Reach"
@@ -93,7 +93,7 @@ name = "손뻗기"
 desc = "조심스럽게 손을 뻗는다. 미끈한 등이 손끝에 스친다."
 action_id = "332/334"
 
-[sub_resource type="Resource" id="Resource_tu65k"]
+[sub_resource type="Resource" id="Resource_dlb6m"]
 script = ExtResource("1_m104p")
 id = 332
 operation = "Catch"
@@ -101,21 +101,21 @@ name = "움켜쥐기"
 desc = "축축한 녀석을 양손으로 감싸 쥔다. 뒷다리가 손 안에서 꿈틀거린다."
 action_id = "340/301"
 
-[sub_resource type="Resource" id="Resource_astau"]
+[sub_resource type="Resource" id="Resource_gae65"]
 script = ExtResource("1_m104p")
 id = 333
 operation = "Flee"
 name = "물속도주"
 desc = "기척을 눈치챈 녀석이 뒷다리를 차며 물속으로 사라진다."
 
-[sub_resource type="Resource" id="Resource_awwwj"]
+[sub_resource type="Resource" id="Resource_tu65k"]
 script = ExtResource("1_m104p")
 id = 334
 operation = "Flee"
 name = "미끌도주"
 desc = "미끈한 피부에 손이 미끄러진다. 녀석이 풀숲으로 뛰어 사라진다."
 
-[sub_resource type="Resource" id="Resource_6w0nn"]
+[sub_resource type="Resource" id="Resource_astau"]
 script = ExtResource("1_m104p")
 id = 335
 operation = "Search"
@@ -123,7 +123,7 @@ name = "낙엽걷기"
 desc = "낙엽을 살살 걷어내며 위치를 좁힌다. 축축한 등이 보인다."
 action_id = "337/338"
 
-[sub_resource type="Resource" id="Resource_n35lm"]
+[sub_resource type="Resource" id="Resource_awwwj"]
 script = ExtResource("1_m104p")
 id = 336
 operation = "Block"
@@ -131,7 +131,7 @@ name = "길막기"
 desc = "도망칠 방향을 손으로 막고 천천히 몰아간다."
 action_id = "337/339"
 
-[sub_resource type="Resource" id="Resource_w64l4"]
+[sub_resource type="Resource" id="Resource_6w0nn"]
 script = ExtResource("1_m104p")
 id = 337
 operation = "Catch"
@@ -139,21 +139,21 @@ name = "꼬리잡기"
 desc = "미끈한 몸통을 간신히 감싼다. 꿈틀대지만 놓치지 않는다."
 action_id = "341/301"
 
-[sub_resource type="Resource" id="Resource_4juk3"]
+[sub_resource type="Resource" id="Resource_n35lm"]
 script = ExtResource("1_m104p")
 id = 338
 operation = "Flee"
 name = "흙속도주"
 desc = "녀석이 몸을 비틀며 축축한 흙 속으로 파고든다."
 
-[sub_resource type="Resource" id="Resource_mm4gq"]
+[sub_resource type="Resource" id="Resource_w64l4"]
 script = ExtResource("1_m104p")
 id = 339
 operation = "Flee"
 name = "낙엽도주"
 desc = "낙엽 사이로 몸을 숨긴다. 어디로 갔는지 보이지 않는다."
 
-[sub_resource type="Resource" id="Resource_udfmx"]
+[sub_resource type="Resource" id="Resource_4juk3"]
 script = ExtResource("1_m104p")
 id = 340
 operation = "Acquire"
@@ -163,7 +163,7 @@ result_card = "40049"
 card_min_value = "1"
 card_max_value = "1"
 
-[sub_resource type="Resource" id="Resource_5m0cg"]
+[sub_resource type="Resource" id="Resource_mm4gq"]
 script = ExtResource("1_m104p")
 id = 341
 operation = "Acquire"
@@ -173,7 +173,7 @@ result_card = "40050"
 card_min_value = "1"
 card_max_value = "1"
 
-[sub_resource type="Resource" id="Resource_k2w67"]
+[sub_resource type="Resource" id="Resource_udfmx"]
 script = ExtResource("1_m104p")
 id = 342
 operation = "Acquire"
@@ -183,7 +183,7 @@ result_card = "40051"
 card_min_value = "1"
 card_max_value = "1"
 
-[sub_resource type="Resource" id="Resource_f6ydi"]
+[sub_resource type="Resource" id="Resource_5m0cg"]
 script = ExtResource("1_m104p")
 id = 343
 operation = "Sneak"
@@ -191,7 +191,7 @@ name = "돌뒤돌기"
 desc = "돌 뒤쪽으로 천천히 우회한다. 녀석이 아직 눈치채지 못했다."
 action_id = "345/346"
 
-[sub_resource type="Resource" id="Resource_1c5dw"]
+[sub_resource type="Resource" id="Resource_k2w67"]
 script = ExtResource("1_m104p")
 id = 344
 operation = "Strike"
@@ -199,7 +199,7 @@ name = "내리누르기"
 desc = "재빨리 손바닥을 펴서 녀석을 누른다."
 action_id = "345/347"
 
-[sub_resource type="Resource" id="Resource_8kxr6"]
+[sub_resource type="Resource" id="Resource_f6ydi"]
 script = ExtResource("1_m104p")
 id = 345
 operation = "Catch"
@@ -207,49 +207,49 @@ name = "틈새잡기"
 desc = "돌 틈에 끼인 녀석을 조심히 잡아 올린다. 발톱이 손을 긁는다."
 action_id = "342/301"
 
-[sub_resource type="Resource" id="Resource_bjetk"]
+[sub_resource type="Resource" id="Resource_1c5dw"]
 script = ExtResource("1_m104p")
 id = 346
 operation = "Flee"
 name = "바위도주"
 desc = "녀석이 홱 몸을 틀어 바위 틈으로 사라진다."
 
-[sub_resource type="Resource" id="Resource_agpqh"]
+[sub_resource type="Resource" id="Resource_8kxr6"]
 script = ExtResource("1_m104p")
 id = 347
 operation = "Flee"
 name = "꼬리떨굼"
 desc = "잡은 건 끊어진 꼬리뿐이다. 녀석은 이미 바위 저편이다."
 
-[sub_resource type="Resource" id="Resource_nhot4"]
+[sub_resource type="Resource" id="Resource_bjetk"]
 script = ExtResource("1_m104p")
 id = 1000
 operation = "Eat"
 name = "먹기"
 desc = "음식을 섭취합니다."
 
-[sub_resource type="Resource" id="Resource_5b48f"]
+[sub_resource type="Resource" id="Resource_agpqh"]
 script = ExtResource("1_m104p")
 id = 1001
 operation = "Drink"
 name = "마시기"
 desc = "액체 음식을 마십니다."
 
-[sub_resource type="Resource" id="Resource_scthg"]
+[sub_resource type="Resource" id="Resource_nhot4"]
 script = ExtResource("1_m104p")
 id = 1002
 operation = "Use"
 name = "사용하기"
 desc = "소모성 도구를 사용합니다."
 
-[sub_resource type="Resource" id="Resource_0dqhn"]
+[sub_resource type="Resource" id="Resource_5b48f"]
 script = ExtResource("1_m104p")
 id = 1003
 operation = "Equip"
 name = "장착하기"
 desc = "장비를 장착합니다."
 
-[sub_resource type="Resource" id="Resource_i7x5e"]
+[sub_resource type="Resource" id="Resource_scthg"]
 script = ExtResource("1_m104p")
 id = 1004
 operation = "Rest"
@@ -257,7 +257,7 @@ name = "휴식하기"
 desc = "쉼터에서 잠시 휴식을 취합니다."
 option_id = "1401"
 
-[sub_resource type="Resource" id="Resource_hecdb"]
+[sub_resource type="Resource" id="Resource_0dqhn"]
 script = ExtResource("1_m104p")
 id = 1005
 operation = "Collect_Water"
@@ -267,7 +267,7 @@ result_card = "40047"
 card_min_value = "1"
 card_max_value = "2"
 
-[sub_resource type="Resource" id="Resource_4fy0p"]
+[sub_resource type="Resource" id="Resource_i7x5e"]
 script = ExtResource("1_m104p")
 id = 3000
 operation = "Gather_Fern"
@@ -277,7 +277,7 @@ result_card = "40001/30006"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_6417p"]
+[sub_resource type="Resource" id="Resource_hecdb"]
 script = ExtResource("1_m104p")
 id = 3001
 operation = "Gather_Horsetail"
@@ -287,7 +287,7 @@ result_card = "40004/30006"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_yfxuy"]
+[sub_resource type="Resource" id="Resource_4fy0p"]
 script = ExtResource("1_m104p")
 id = 3002
 operation = "Gather_Cycad"
@@ -297,7 +297,7 @@ result_card = "40007/30006"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_jmgq6"]
+[sub_resource type="Resource" id="Resource_6417p"]
 script = ExtResource("1_m104p")
 id = 3003
 operation = "Gather_Ginkgo"
@@ -307,7 +307,7 @@ result_card = "40010/30011"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_wp3sq"]
+[sub_resource type="Resource" id="Resource_yfxuy"]
 script = ExtResource("1_m104p")
 id = 3004
 operation = "Gather_Vine"
@@ -317,7 +317,7 @@ result_card = "30001/30006"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_bwu5m"]
+[sub_resource type="Resource" id="Resource_jmgq6"]
 script = ExtResource("1_m104p")
 id = 3006
 operation = "Gather_Seaweed"
@@ -327,7 +327,7 @@ result_card = "40016/30081"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_mo7io"]
+[sub_resource type="Resource" id="Resource_wp3sq"]
 script = ExtResource("1_m104p")
 id = 3007
 operation = "Gather_Shellfish"
@@ -337,7 +337,7 @@ result_card = "40019/30086"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_676ir"]
+[sub_resource type="Resource" id="Resource_bwu5m"]
 script = ExtResource("1_m104p")
 id = 3008
 operation = "Gather_Clay"
@@ -347,7 +347,7 @@ result_card = "30046/30047"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_w885d"]
+[sub_resource type="Resource" id="Resource_mo7io"]
 script = ExtResource("1_m104p")
 id = 3009
 operation = "Pickup_Stone"
@@ -357,7 +357,7 @@ result_card = "30031/30032"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_fmq87"]
+[sub_resource type="Resource" id="Resource_676ir"]
 script = ExtResource("1_m104p")
 id = 3011
 operation = "Gather_Quartz"
@@ -367,7 +367,7 @@ result_card = "30041/30042"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_aaki8"]
+[sub_resource type="Resource" id="Resource_w885d"]
 script = ExtResource("1_m104p")
 id = 3012
 operation = "Dig_Up_Bone"
@@ -378,7 +378,7 @@ result_card = "30056/30061/30066"
 card_min_value = "1/1/2000"
 card_max_value = "2002/1/1"
 
-[sub_resource type="Resource" id="Resource_rpgqc"]
+[sub_resource type="Resource" id="Resource_fmq87"]
 script = ExtResource("1_m104p")
 id = 3013
 operation = "Search_Egg"
@@ -389,7 +389,7 @@ result_card = "40040/30076"
 card_min_value = "1/1"
 card_max_value = "2/1"
 
-[sub_resource type="Resource" id="Resource_0lycs"]
+[sub_resource type="Resource" id="Resource_aaki8"]
 script = ExtResource("1_m104p")
 id = 3014
 operation = "Scoop_Puddle"
@@ -399,7 +399,7 @@ result_card = "40046"
 card_min_value = "1"
 card_max_value = "2"
 
-[sub_resource type="Resource" id="Resource_xwoxe"]
+[sub_resource type="Resource" id="Resource_rpgqc"]
 script = ExtResource("1_m104p")
 id = 3015
 operation = "Drink_Puddle"
@@ -407,7 +407,7 @@ name = "웅덩이마시기"
 desc = "고인 물을 마십니다."
 option_id = "1100/2002"
 
-[sub_resource type="Resource" id="Resource_akn0g"]
+[sub_resource type="Resource" id="Resource_0lycs"]
 script = ExtResource("1_m104p")
 id = 3016
 operation = "Drink_Stream"
@@ -415,7 +415,7 @@ name = "시냇물마시기"
 desc = "흐르는 물을 바로 마십니다."
 option_id = "1101"
 
-[sub_resource type="Resource" id="Resource_6bg3v"]
+[sub_resource type="Resource" id="Resource_xwoxe"]
 script = ExtResource("1_m104p")
 id = 3017
 operation = "Search_Cliff"
@@ -426,7 +426,7 @@ result_card = "30071/30041/30031"
 card_min_value = "2001/1/1"
 card_max_value = "2002/1/1"
 
-[sub_resource type="Resource" id="Resource_k2tde"]
+[sub_resource type="Resource" id="Resource_akn0g"]
 script = ExtResource("1_m104p")
 id = 3018
 operation = "Explore_Cave"
@@ -437,7 +437,7 @@ result_card = "30036/30056/30046"
 card_min_value = "2001/1/1"
 card_max_value = "2002/1/1"
 
-[sub_resource type="Resource" id="Resource_nmwp2"]
+[sub_resource type="Resource" id="Resource_6bg3v"]
 script = ExtResource("1_m104p")
 id = 3019
 operation = "Explore_Sulfur"
@@ -448,7 +448,7 @@ result_card = "30051/30042/30032"
 card_min_value = "2001/1/1"
 card_max_value = "2002/1/1"
 
-[sub_resource type="Resource" id="Resource_jkx43"]
+[sub_resource type="Resource" id="Resource_k2tde"]
 script = ExtResource("1_m104p")
 id = 3020
 operation = "Search_Sea"
@@ -458,7 +458,7 @@ result_card = "40019/30081/30091"
 card_min_value = "1/1/2000"
 card_max_value = "2001/1/1"
 
-[sub_resource type="Resource" id="Resource_hdbqy"]
+[sub_resource type="Resource" id="Resource_nmwp2"]
 script = ExtResource("1_m104p")
 id = 3021
 operation = "Search_Mud"
@@ -469,7 +469,7 @@ result_card = "30046/30096/30086"
 card_min_value = "1/1/2000"
 card_max_value = "2002/1/1"
 
-[sub_resource type="Resource" id="Resource_ei8b5"]
+[sub_resource type="Resource" id="Resource_jkx43"]
 script = ExtResource("1_m104p")
 id = 3023
 operation = "Search_Hot_Spring"
@@ -480,7 +480,7 @@ result_card = "40047/30051/30096"
 card_min_value = "2001/1/1"
 card_max_value = "2001/1/1"
 
-[sub_resource type="Resource" id="Resource_ki525"]
+[sub_resource type="Resource" id="Resource_hdbqy"]
 script = ExtResource("1_m104p")
 id = 3024
 operation = "Gather_Herb"
@@ -490,7 +490,7 @@ result_card = "30096"
 card_min_value = "1"
 card_max_value = "2"
 
-[sub_resource type="Resource" id="Resource_e10ru"]
+[sub_resource type="Resource" id="Resource_ei8b5"]
 script = ExtResource("1_m104p")
 id = 3025
 operation = "Scoop_Stream"
@@ -500,7 +500,7 @@ result_card = "40047"
 card_min_value = "1"
 card_max_value = "2"
 
-[sub_resource type="Resource" id="Resource_mp5wo"]
+[sub_resource type="Resource" id="Resource_ki525"]
 script = ExtResource("1_m104p")
 id = 9000
 operation = "Discard"
@@ -510,63 +510,63 @@ desc = "아이템을 영구히 제거합니다."
 [resource]
 script = ExtResource("2_5q165")
 records = {
-1: SubResource("Resource_5k2br"),
-2: SubResource("Resource_48lam"),
-60: SubResource("Resource_8nny3"),
-300: SubResource("Resource_toot6"),
-301: SubResource("Resource_4fjug"),
-302: SubResource("Resource_jncq0"),
-303: SubResource("Resource_bkqd4"),
-304: SubResource("Resource_xevam"),
-320: SubResource("Resource_6awrh"),
-321: SubResource("Resource_mp8f4"),
-322: SubResource("Resource_hfty1"),
-330: SubResource("Resource_dlb6m"),
-331: SubResource("Resource_gae65"),
-332: SubResource("Resource_tu65k"),
-333: SubResource("Resource_astau"),
-334: SubResource("Resource_awwwj"),
-335: SubResource("Resource_6w0nn"),
-336: SubResource("Resource_n35lm"),
-337: SubResource("Resource_w64l4"),
-338: SubResource("Resource_4juk3"),
-339: SubResource("Resource_mm4gq"),
-340: SubResource("Resource_udfmx"),
-341: SubResource("Resource_5m0cg"),
-342: SubResource("Resource_k2w67"),
-343: SubResource("Resource_f6ydi"),
-344: SubResource("Resource_1c5dw"),
-345: SubResource("Resource_8kxr6"),
-346: SubResource("Resource_bjetk"),
-347: SubResource("Resource_agpqh"),
-1000: SubResource("Resource_nhot4"),
-1001: SubResource("Resource_5b48f"),
-1002: SubResource("Resource_scthg"),
-1003: SubResource("Resource_0dqhn"),
-1004: SubResource("Resource_i7x5e"),
-1005: SubResource("Resource_hecdb"),
-3000: SubResource("Resource_4fy0p"),
-3001: SubResource("Resource_6417p"),
-3002: SubResource("Resource_yfxuy"),
-3003: SubResource("Resource_jmgq6"),
-3004: SubResource("Resource_wp3sq"),
-3006: SubResource("Resource_bwu5m"),
-3007: SubResource("Resource_mo7io"),
-3008: SubResource("Resource_676ir"),
-3009: SubResource("Resource_w885d"),
-3011: SubResource("Resource_fmq87"),
-3012: SubResource("Resource_aaki8"),
-3013: SubResource("Resource_rpgqc"),
-3014: SubResource("Resource_0lycs"),
-3015: SubResource("Resource_xwoxe"),
-3016: SubResource("Resource_akn0g"),
-3017: SubResource("Resource_6bg3v"),
-3018: SubResource("Resource_k2tde"),
-3019: SubResource("Resource_nmwp2"),
-3020: SubResource("Resource_jkx43"),
-3021: SubResource("Resource_hdbqy"),
-3023: SubResource("Resource_ei8b5"),
-3024: SubResource("Resource_ki525"),
-3025: SubResource("Resource_e10ru"),
-9000: SubResource("Resource_mp5wo")
+1: SubResource("Resource_m104p"),
+2: SubResource("Resource_5q165"),
+60: SubResource("Resource_5k2br"),
+300: SubResource("Resource_48lam"),
+301: SubResource("Resource_8nny3"),
+302: SubResource("Resource_toot6"),
+303: SubResource("Resource_4fjug"),
+304: SubResource("Resource_jncq0"),
+320: SubResource("Resource_bkqd4"),
+321: SubResource("Resource_xevam"),
+322: SubResource("Resource_6awrh"),
+330: SubResource("Resource_mp8f4"),
+331: SubResource("Resource_hfty1"),
+332: SubResource("Resource_dlb6m"),
+333: SubResource("Resource_gae65"),
+334: SubResource("Resource_tu65k"),
+335: SubResource("Resource_astau"),
+336: SubResource("Resource_awwwj"),
+337: SubResource("Resource_6w0nn"),
+338: SubResource("Resource_n35lm"),
+339: SubResource("Resource_w64l4"),
+340: SubResource("Resource_4juk3"),
+341: SubResource("Resource_mm4gq"),
+342: SubResource("Resource_udfmx"),
+343: SubResource("Resource_5m0cg"),
+344: SubResource("Resource_k2w67"),
+345: SubResource("Resource_f6ydi"),
+346: SubResource("Resource_1c5dw"),
+347: SubResource("Resource_8kxr6"),
+1000: SubResource("Resource_bjetk"),
+1001: SubResource("Resource_agpqh"),
+1002: SubResource("Resource_nhot4"),
+1003: SubResource("Resource_5b48f"),
+1004: SubResource("Resource_scthg"),
+1005: SubResource("Resource_0dqhn"),
+3000: SubResource("Resource_i7x5e"),
+3001: SubResource("Resource_hecdb"),
+3002: SubResource("Resource_4fy0p"),
+3003: SubResource("Resource_6417p"),
+3004: SubResource("Resource_yfxuy"),
+3006: SubResource("Resource_jmgq6"),
+3007: SubResource("Resource_wp3sq"),
+3008: SubResource("Resource_bwu5m"),
+3009: SubResource("Resource_mo7io"),
+3011: SubResource("Resource_676ir"),
+3012: SubResource("Resource_w885d"),
+3013: SubResource("Resource_fmq87"),
+3014: SubResource("Resource_aaki8"),
+3015: SubResource("Resource_rpgqc"),
+3016: SubResource("Resource_0lycs"),
+3017: SubResource("Resource_xwoxe"),
+3018: SubResource("Resource_akn0g"),
+3019: SubResource("Resource_6bg3v"),
+3020: SubResource("Resource_k2tde"),
+3021: SubResource("Resource_nmwp2"),
+3023: SubResource("Resource_jkx43"),
+3024: SubResource("Resource_hdbqy"),
+3025: SubResource("Resource_ei8b5"),
+9000: SubResource("Resource_ki525")
 }

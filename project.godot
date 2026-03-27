@@ -14,6 +14,14 @@ config/name="JurassicSurvival"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+SignalBus="*res://assets/scripts/autoloads/SignalBus.gd"
+StatusManager="*res://assets/scripts/autoloads/StatusManager.gd"
+SaveManager="*res://assets/scripts/autoloads/SaveManager.gd"
+SoundManager="*res://assets/scripts/autoloads/SoundManager.gd"
+GlobalManager="*res://assets/scripts/autoloads/GlobalManager.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/google_sheet_importer/plugin.cfg", "res://addons/single_click_inspector/plugin.cfg")

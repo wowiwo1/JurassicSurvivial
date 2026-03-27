@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://bxeke3xsmpi6r"]
 
-[ext_resource type="Script" uid="uid://gkl0sxjtyeo6" path="res://assets/game_table/scripts/card_data.gd" id="1_bxgu5"]
-[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_al6dy"]
+[ext_resource type="Script" uid="uid://c62tq763ohxit" path="res://assets/game_table/scripts/card_data.gd" id="1_bxgu5"]
+[ext_resource type="Script" uid="uid://0mkjf82o6rtg" path="res://assets/game_table/scripts/table_container.gd" id="2_al6dy"]
 
 [sub_resource type="Resource" id="Resource_bxgu5"]
 script = ExtResource("1_bxgu5")

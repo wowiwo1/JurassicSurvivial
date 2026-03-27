@@ -1,0 +1,105 @@
+# 쥬라기 서바이벌 고도(Godot) 엔진 마이그레이션 아키텍처 가이드
+
+이 문서는 고도 4.6.1(Godot 4.6.1) 엔진으로 가장 이상적이고 최적화된 형태로 마이그레이션하기 위한 설계도입니다. 향후 작업 시 기준점(Reference)으로 사용됩니다.
+
+---
+
+## 🚀 1. 핵심 아키텍처 원칙 (Core Architectural Principles)
+
+1.  **단일 오픈 필드 (Infinite Canvas):** 
+    *   `Camera2D`를 사용하여 플레이어가 자유롭게 줌인/줌아웃 및 패닝(이동)할 수 있는 탁 트인 하나의 거대한 보드판(필드)을 제공합니다.
+    *   카드는 이 거대한 필드 위에 자유롭게 놓이며, 그 안에서 탐험과 조합이 이루어집니다.
+2.  **데이터 주도 설계 (Data-Driven Design):**
+    *   기획 데이터를 통으로 받아서 고도의 리소스(`Resource`)화하고, 이를 사용해 게임을 초기화하는 것이 핵심입니다.
+    *   기획자가 정의한 `Operator`와 `Operation` 값을 기획 데이터(GameTable)로 받아서 `StatusManager`가 일괄 처리하게 설계합니다.
+    *   해당 테이블 데이터 리소스들은 `res://assets/game_table/data/` 경로에 저장되어 있습니다.
+3.  **옵저버 & 쿼리 패턴 분리:**
+    *   **실행/결과 (Event):** "탐험 완료", "제작 성공" 등은 다른 노드들을 직접 참조하지 않고 `SignalBus`를 통해 전역 방송합니다.
+    *   **질의/검증 (Query):** "제작이 가능한가?", "허기가 몇인가?" 등 즉각적인 리턴(True/False)이 필요한 경우는 매니저의 함수를 직접 호출(Direct Call)하여 결재를 받습니다.
+
+---
+
+## 🗄️ 2. 매니저(시스템) 구성 전략
+
+고도에서는 생존 주기가 다른 2가지 그룹으로 매니저를 나눕니다.
+
+### A. Autoload (전역 싱글톤)
+언제 어디서든, 씬이 전환되어도 항상 메모리에 상주하는 최상단 매니저들입니다.
+
+*   `SignalBus.gd`: 전역 이벤트 허브. (예: `signal card_crafted(result_id, pos)`, `signal day_night_changed(is_night)`)
+*   `StatusManager.gd`: 게임 룰(GameRule) 및 스탯 관리자. 기획 데이터(`Operator`, `Operation`)를 바탕으로 내부 상태 이상 및 수치(허기, 피로도)를 갱신하며, `StatusManager.query("can_explore")` 같은 만능 조건 검사기 역할을 합니다.
+*   `SaveManager.gd`: 필드 위에 뿌려진 "모든 카드의 X, Y 좌표와 스택/내구도"를 수집하여 JSON 형태로 저장/불러오기를 전담합니다.
+*   `SoundManager.gd`: 마스터 볼륨 관리, 2D/3D 배경음 및 효과음 제어 인스턴스 풀링 전담.
+*   `GlobalManager.gd`: 계정 정보 로드, 서버 통신 등 게임 메타 데이터 보관용.
+
+### B. 게임 씬 내부 시스템 (Systems Node)
+실제 게임 플레이(보드) 씬이 열렸을 때만 존재하는 로직(데이터 판별) 노드들입니다. UI를 절대 직접 변경하지 않습니다.
+
+*   `CraftSystem.gd`: 조합 전담. 카드가 던져주는 "A카드와 B카드가 합쳐질래" 질의에 대해 데이터를 검증하고, 재료 소모량과 결과 카드 ID만을 반환합니다.
+*   `ExploreSystem.gd`: 탐험 드랍 전담. 확률(방향, 가중치)을 계산해 스폰해야 할 다음 카드 목록을 제공합니다.
+*   `CardSpawner.gd`: 카드 생성 및 텍스처 로딩을 전담합니다. 향후 오브젝트 풀링(Object Pooling)을 쉽게 적용하기 위해, 텍스처를 가져오고 카드를 인스턴스화하는 기능은 무조건 이 노드의 단일 함수로 묶어 제공합니다.
+
+---
+
+## 📦 3. 리소스 및 데이터 관리 전략 (Resources & Data)
+
+성능이 뛰어난 고도의 `Custom Resource (.tres)`를 사용합니다. 데이터 테이블 리소스는 `res://assets/game_table/data/` 에 저장되어 있습니다. (예: `action_table.tres`, `card_table.tres`)
+
+### 정적 데이터 (Static Data = Resource)
+*   **어디에?:** `res://assets/game_table/data/` 폴더 하위에 보관.
+*   **특징:** 게임 도중 절대 값이 바뀌지 않습니다. 체력 최대치, 아이콘 이미지 경로, 카드 이름, 카드 타입 등. 메모리에 1개만 로드되어 여러 카드가 레퍼런스(포인터)를 공유해 메모리를 아낍니다.
+
+### 동적 상태 (Dynamic State = 객체 변수)
+*   **어디에?:** 필드에 소환된 [Card](file:///c:/Project/JurassicSurvival/Program/Client/Trunk/Unity/Assets/AssetBundle/Scripts/Cards/CardUI.cs#9-1321) 씬 자체의 로컬 변수로 들고 있습니다. (`current_stack`, `current_durability`, `local_position`)
+*   **세이브 연동:** `SaveManager`는 이 동적 변수들과 고유 ID 번호만 쫙 긁어서 저장합니다.
+
+---
+
+## 🃏 4. 카드(Card) 생명주기 및 씬 설계
+
+단일 오픈 필드 환경이므로 카드는 물리엔진과 UI가 결합된 형태로 자유롭게 움직여야 합니다. 
+*(참고: 기존 유니티의 별도 조작 매니저였던 `CardDragHandler`는 고도 엔진의 범용 GUI 이벤트 콜백(`_get_drag_data`, `_can_drop_data` 등)으로 완벽하게 대체되므로 폐기됩니다.)*
+
+*   **노드 구성:** 
+    *   카드의 루트는 `Area2D` 혹은 `Control` 노드를 사용합니다.
+    *   거대한 `Camera2D` 필드 위에서 확대/축소를 지원해야 하므로, 카드의 크기 조정과 겹침(Overlapping) 판정이 쉬운 `Area2D` + 픽셀아트 위주의 `Sprite2D` 구조가 "샌드박스 맵" 탐험에 더 적합할 수 있습니다. (구현 시 테스트하여 결정).
+*   **텍스처 로딩 및 풀링 대비:**
+    *   카드가 직접 `load()`를 호출하지 않도록 주의합니다. 반드시 `CardSpawner`의 생성/할당 함수를 거치도록 하여 나중에 풀링 시스템을 확장성 있게 적용할 수 있도록 대비합니다.
+*   **제어권 (드래그와 조합):**
+    *   마우스 드래그 조작은 노드 내장 함수(`_gui_input` 또는 `_get_drag_data`)를 통해 스스로 처리합니다.
+    *   겹침 발생 시, `CraftSystem`을 호출하여 승인/실패를 묻고 스스로 `queue_free()`(파괴)하거나 원래 좌표로 돌아오는(Tween) 스크립트로 작성합니다.
+    *    카드가 직접 `queue_free()`를 호출하지 않도록 주의합니다. 대신 `CardSpawner`의 반납 함수를 호출하여 풀링 시스템을 확장성있게 적용할 수 있도록 대비합니다.
+
+---
+
+## 🗺️ 5. 단계별 구현 로드맵 (Roadmap)
+
+이 문서를 바탕으로 다음 순서에 따라 차근차근 개발을 진행합니다.
+해당 프로젝트는 중생대에서 생존하는 카드 게임으로 오픈 필드에서 카드를 조합하고 탐험하며 생존하는 게임입니다. Card Survival, Stacklands와 유사한 게임입니다.
+필드에 카드를 배치하고, 카드를 조합하고, 카드를 탐험하며 생존하는 게임입니다.
+기본적으로 필드에 맵 카드가 반드시 존재하며 맵 카드를 탐험하면 새로운 카드를 얻을 수 있습니다. 카드들끼리 드래그로 합쳐서 조합하거나 크래프팅 UI에서 조합할 수 있습니다. 
+카드는 그 자체로 게임 상태에 영향을 끼칠 수 있으며, 선택해서 사용하거나 버릴 수 있습니다. 
+주인공 캐릭터의 체력, 허기, 갈증, 피로도 등을 관리해야 합니다. 
+
+### Step 1: 툴 개발 및 기초 공사 (데이터 파이프라인)
+*   **Step 1-1.** 유저(기획/개발)가 구글 시트(혹은 CSV) 데이터를 고도의 `Custom Resource (.tres)`로 일괄 변환 (✅ **완료 및 리소스 적용됨**)
+*   **Step 1-2.** `SignalBus.gd` 와 기획 데이터를 로드하는 `StatusManager.gd` Autoload 생성 및 기초 세팅.
+
+### Step 2: 싱글 오픈 필드 및 줌/카메라 시스템 구축
+1. 빈 메인 씬에 `Camera2D` 기반의 줌인/줌아웃, 패닝(마우스 우클릭 혹은 휠 클릭 드래그로 화면 이동) 스크립트 완성.
+2. 정렬을 위한 가상 그리드 및 무한한 바닥 텍스처 구축.
+
+### Step 3: 카드 엔티티(Entity) 및 조작 로직 개발
+1. 뼈대가 되는 [Card](file:///c:/Project/JurassicSurvival/Program/Client/Trunk/Unity/Assets/AssetBundle/Scripts/Cards/CardUI.cs#9-1321) 씬 생성 (이미지, 이름, 텍스트 배치).
+2. 카드 풀링 대비를 위한 `CardSpawner` 중심의 텍스처 로딩 및 인스턴스화 함수 구조 생성.
+3. 고도 내장 기능(`_get_drag_data`, `_can_drop_data` 등)을 이용한 카드 드래그 앤 드롭 구현. (마우스 드래그 시 카드가 따라다니고 허공에 놓으면 해당 위치에 정착).
+4. 스택(수량) 합치기와 분할 조작(Drag & Drop) 처리.
+
+### Step 4: 시스템 결합 (조합 & 탐험)
+1. `CraftSystem.gd` 개발하여 [Card](file:///c:/Project/JurassicSurvival/Program/Client/Trunk/Unity/Assets/AssetBundle/Scripts/Cards/CardUI.cs#9-1321)의 드래그 조작 시 교집합 판정 (카드 간 결합).
+2. `ExploreSystem.gd` 확률 로직 짜기 및 스폰 연출. "카드를 더블클릭/특정 버튼 클릭 시 전리품 카드가 필드 위로 팡 튀어 오르는(Tween) 연출".
+
+### Step 5: 세이브/로드 및 폴리싱
+1. 필드 위에 시각적으로 퍼져 있는 모든 카드 정보를 `SaveManager`가 수집해 JSON 저장 기능 완성.
+2. 상태바(허기/피로) UI와 사운드 이펙트 연동.
+3. 시뮬레이션 및 디버그.
