@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bhocim6871560" path="res://assets/game_table/scripts/sfx_data.gd" id="1_20mey"]
 [ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_3spg5"]
 
-[sub_resource type="Resource" id="Resource_20mey"]
+[sub_resource type="Resource" id="Resource_46uo5"]
 script = ExtResource("1_20mey")
 key = "카드 합칠떄"
 sfx = "사운드 파일명"
@@ -11,5 +11,5 @@ sfx = "사운드 파일명"
 [resource]
 script = ExtResource("2_3spg5")
 records = {
-"카드 합칠떄": SubResource("Resource_20mey")
+"카드 합칠떄": SubResource("Resource_46uo5")
 }

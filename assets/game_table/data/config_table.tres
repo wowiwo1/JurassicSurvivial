@@ -3,31 +3,31 @@
 [ext_resource type="Script" uid="uid://mbpnnthp0la3" path="res://assets/game_table/scripts/config_data.gd" id="1_gmo7y"]
 [ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_4yol6"]
 
-[sub_resource type="Resource" id="Resource_gmo7y"]
+[sub_resource type="Resource" id="Resource_b3ggs"]
 script = ExtResource("1_gmo7y")
 id = 1
 key = "HungerDecay"
 value = "0.066667"
 
-[sub_resource type="Resource" id="Resource_4yol6"]
+[sub_resource type="Resource" id="Resource_7wy5p"]
 script = ExtResource("1_gmo7y")
 id = 2
 key = "ThirstDecay"
 value = "0.026667"
 
-[sub_resource type="Resource" id="Resource_b3ggs"]
+[sub_resource type="Resource" id="Resource_4tobu"]
 script = ExtResource("1_gmo7y")
 id = 3
 key = "MentalDecay"
 value = "0.005333"
 
-[sub_resource type="Resource" id="Resource_7wy5p"]
+[sub_resource type="Resource" id="Resource_tl230"]
 script = ExtResource("1_gmo7y")
 id = 4
 key = "SleepIncrease"
 value = "0.04"
 
-[sub_resource type="Resource" id="Resource_4tobu"]
+[sub_resource type="Resource" id="Resource_l44tm"]
 script = ExtResource("1_gmo7y")
 id = 5
 key = "SleepRecovery"
@@ -36,9 +36,9 @@ value = "0.2"
 [resource]
 script = ExtResource("2_4yol6")
 records = {
-1: SubResource("Resource_gmo7y"),
-2: SubResource("Resource_4yol6"),
-3: SubResource("Resource_b3ggs"),
-4: SubResource("Resource_7wy5p"),
-5: SubResource("Resource_4tobu")
+1: SubResource("Resource_b3ggs"),
+2: SubResource("Resource_7wy5p"),
+3: SubResource("Resource_4tobu"),
+4: SubResource("Resource_tl230"),
+5: SubResource("Resource_l44tm")
 }

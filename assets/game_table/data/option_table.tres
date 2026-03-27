@@ -3,224 +3,224 @@
 [ext_resource type="Script" uid="uid://bwr7472atvhs" path="res://assets/game_table/scripts/option_data.gd" id="1_4pgge"]
 [ext_resource type="Script" uid="uid://1uah858qt6on" path="res://assets/game_table/scripts/table_container.gd" id="2_x10l4"]
 
-[sub_resource type="Resource" id="Resource_4pgge"]
+[sub_resource type="Resource" id="Resource_4nwlg"]
 script = ExtResource("1_4pgge")
 id = 1000
 operation = "Hunger"
 value = 10.0
 desc = "허기 회복 (소)"
 
-[sub_resource type="Resource" id="Resource_x10l4"]
+[sub_resource type="Resource" id="Resource_3sflf"]
 script = ExtResource("1_4pgge")
 id = 1001
 operation = "Hunger"
 value = 15.0
 desc = "허기 회복 (기본)"
 
-[sub_resource type="Resource" id="Resource_4nwlg"]
+[sub_resource type="Resource" id="Resource_akr2b"]
 script = ExtResource("1_4pgge")
 id = 1002
 operation = "Hunger"
 value = 20.0
 desc = "허기 회복 (중)"
 
-[sub_resource type="Resource" id="Resource_3sflf"]
+[sub_resource type="Resource" id="Resource_hhlid"]
 script = ExtResource("1_4pgge")
 id = 1100
 operation = "Thirst"
 value = 15.0
 desc = "갈증 회복 (소)"
 
-[sub_resource type="Resource" id="Resource_akr2b"]
+[sub_resource type="Resource" id="Resource_ad63f"]
 script = ExtResource("1_4pgge")
 id = 1101
 operation = "Thirst"
 value = 20.0
 desc = "갈증 회복 (기본)"
 
-[sub_resource type="Resource" id="Resource_hhlid"]
+[sub_resource type="Resource" id="Resource_vtg84"]
 script = ExtResource("1_4pgge")
 id = 1401
 operation = "Fatigue"
 value = -20.0
 desc = "피로 감소 (기본)"
 
-[sub_resource type="Resource" id="Resource_ad63f"]
+[sub_resource type="Resource" id="Resource_bs8pu"]
 script = ExtResource("1_4pgge")
 id = 2000
 operation = "Apply_Sickness"
 prob = 10
 desc = "Sickness 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_vtg84"]
+[sub_resource type="Resource" id="Resource_trndp"]
 script = ExtResource("1_4pgge")
 id = 2001
 operation = "Apply_Sickness"
 prob = 20
 desc = "Sickness 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_bs8pu"]
+[sub_resource type="Resource" id="Resource_rn04t"]
 script = ExtResource("1_4pgge")
 id = 2002
 operation = "Apply_Sickness"
 prob = 35
 desc = "Sickness 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_trndp"]
+[sub_resource type="Resource" id="Resource_x502p"]
 script = ExtResource("1_4pgge")
 id = 2010
 operation = "Apply_Bruise"
 prob = 10
 desc = "Bruise 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_rn04t"]
+[sub_resource type="Resource" id="Resource_pgomd"]
 script = ExtResource("1_4pgge")
 id = 2011
 operation = "Apply_Bruise"
 prob = 20
 desc = "Bruise 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_x502p"]
+[sub_resource type="Resource" id="Resource_6gfd3"]
 script = ExtResource("1_4pgge")
 id = 2020
 operation = "Apply_Wound"
 prob = 5
 desc = "Wound 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_pgomd"]
+[sub_resource type="Resource" id="Resource_2tq7i"]
 script = ExtResource("1_4pgge")
 id = 2021
 operation = "Apply_Wound"
 prob = 10
 desc = "Wound 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_6gfd3"]
+[sub_resource type="Resource" id="Resource_m730u"]
 script = ExtResource("1_4pgge")
 id = 2030
 operation = "Apply_Burn"
 prob = 5
 desc = "Burn 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_2tq7i"]
+[sub_resource type="Resource" id="Resource_qio0g"]
 script = ExtResource("1_4pgge")
 id = 2031
 operation = "Apply_Burn"
 prob = 10
 desc = "Burn 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_m730u"]
+[sub_resource type="Resource" id="Resource_2rec6"]
 script = ExtResource("1_4pgge")
 id = 2040
 operation = "Apply_Sprain"
 prob = 10
 desc = "Sprain 상태 이상 부여"
 
-[sub_resource type="Resource" id="Resource_qio0g"]
+[sub_resource type="Resource" id="Resource_v3gm5"]
 script = ExtResource("1_4pgge")
 id = 2100
 operation = "Block_Sickness"
 prob = 15
 desc = "Sickness 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_2rec6"]
+[sub_resource type="Resource" id="Resource_urjnh"]
 script = ExtResource("1_4pgge")
 id = 2101
 operation = "Block_Sickness"
 prob = 30
 desc = "Sickness 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_v3gm5"]
+[sub_resource type="Resource" id="Resource_hndaj"]
 script = ExtResource("1_4pgge")
 id = 2102
 operation = "Block_Sickness"
 prob = 45
 desc = "Sickness 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_urjnh"]
+[sub_resource type="Resource" id="Resource_e6c07"]
 script = ExtResource("1_4pgge")
 id = 2110
 operation = "Block_Bruise"
 prob = 15
 desc = "Bruise 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_hndaj"]
+[sub_resource type="Resource" id="Resource_o5e60"]
 script = ExtResource("1_4pgge")
 id = 2111
 operation = "Block_Bruise"
 prob = 30
 desc = "Bruise 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_e6c07"]
+[sub_resource type="Resource" id="Resource_c5imx"]
 script = ExtResource("1_4pgge")
 id = 2112
 operation = "Block_Bruise"
 prob = 45
 desc = "Bruise 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_o5e60"]
+[sub_resource type="Resource" id="Resource_bbrf8"]
 script = ExtResource("1_4pgge")
 id = 2120
 operation = "Block_Wound"
 prob = 15
 desc = "Wound 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_c5imx"]
+[sub_resource type="Resource" id="Resource_wo6uk"]
 script = ExtResource("1_4pgge")
 id = 2121
 operation = "Block_Wound"
 prob = 30
 desc = "Wound 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_bbrf8"]
+[sub_resource type="Resource" id="Resource_xb6i4"]
 script = ExtResource("1_4pgge")
 id = 2122
 operation = "Block_Wound"
 prob = 45
 desc = "Wound 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_wo6uk"]
+[sub_resource type="Resource" id="Resource_so11v"]
 script = ExtResource("1_4pgge")
 id = 2130
 operation = "Block_Burn"
 prob = 15
 desc = "Burn 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_xb6i4"]
+[sub_resource type="Resource" id="Resource_i6ryk"]
 script = ExtResource("1_4pgge")
 id = 2131
 operation = "Block_Burn"
 prob = 30
 desc = "Burn 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_so11v"]
+[sub_resource type="Resource" id="Resource_etst2"]
 script = ExtResource("1_4pgge")
 id = 2132
 operation = "Block_Burn"
 prob = 45
 desc = "Burn 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_i6ryk"]
+[sub_resource type="Resource" id="Resource_thh7c"]
 script = ExtResource("1_4pgge")
 id = 2140
 operation = "Block_Sprain"
 prob = 15
 desc = "Sprain 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_etst2"]
+[sub_resource type="Resource" id="Resource_r27ea"]
 script = ExtResource("1_4pgge")
 id = 2141
 operation = "Block_Sprain"
 prob = 30
 desc = "Sprain 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_thh7c"]
+[sub_resource type="Resource" id="Resource_g5n8f"]
 script = ExtResource("1_4pgge")
 id = 2142
 operation = "Block_Sprain"
 prob = 45
 desc = "Sprain 상태 이상 방어"
 
-[sub_resource type="Resource" id="Resource_r27ea"]
+[sub_resource type="Resource" id="Resource_goc4h"]
 script = ExtResource("1_4pgge")
 id = 2200
 operation = "Heal_Sickness"
@@ -228,7 +228,7 @@ prob = 10
 value = 2.0
 desc = "Sickness 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_g5n8f"]
+[sub_resource type="Resource" id="Resource_qauof"]
 script = ExtResource("1_4pgge")
 id = 2201
 operation = "Heal_Sickness"
@@ -236,7 +236,7 @@ prob = 20
 value = 3.0
 desc = "Sickness 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_goc4h"]
+[sub_resource type="Resource" id="Resource_8rbwb"]
 script = ExtResource("1_4pgge")
 id = 2210
 operation = "Heal_Bruise"
@@ -244,7 +244,7 @@ prob = 10
 value = 2.0
 desc = "Bruise 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_qauof"]
+[sub_resource type="Resource" id="Resource_8g4dg"]
 script = ExtResource("1_4pgge")
 id = 2211
 operation = "Heal_Bruise"
@@ -252,7 +252,7 @@ prob = 20
 value = 3.0
 desc = "Bruise 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_8rbwb"]
+[sub_resource type="Resource" id="Resource_0h8bg"]
 script = ExtResource("1_4pgge")
 id = 2212
 operation = "Heal_Bruise"
@@ -260,7 +260,7 @@ prob = 30
 value = 4.0
 desc = "Bruise 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_8g4dg"]
+[sub_resource type="Resource" id="Resource_k7qqc"]
 script = ExtResource("1_4pgge")
 id = 2220
 operation = "Heal_Wound"
@@ -268,7 +268,7 @@ prob = 10
 value = 2.0
 desc = "Wound 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_0h8bg"]
+[sub_resource type="Resource" id="Resource_7mpeu"]
 script = ExtResource("1_4pgge")
 id = 2221
 operation = "Heal_Wound"
@@ -276,7 +276,7 @@ prob = 20
 value = 3.0
 desc = "Wound 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_k7qqc"]
+[sub_resource type="Resource" id="Resource_ssbmp"]
 script = ExtResource("1_4pgge")
 id = 2222
 operation = "Heal_Wound"
@@ -284,7 +284,7 @@ prob = 30
 value = 4.0
 desc = "Wound 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_7mpeu"]
+[sub_resource type="Resource" id="Resource_y3que"]
 script = ExtResource("1_4pgge")
 id = 2230
 operation = "Heal_Burn"
@@ -292,7 +292,7 @@ prob = 10
 value = 2.0
 desc = "Burn 상태 이상 치료"
 
-[sub_resource type="Resource" id="Resource_ssbmp"]
+[sub_resource type="Resource" id="Resource_6coot"]
 script = ExtResource("1_4pgge")
 id = 2231
 operation = "Heal_Burn"
@@ -303,45 +303,45 @@ desc = "Burn 상태 이상 치료"
 [resource]
 script = ExtResource("2_x10l4")
 records = {
-1000: SubResource("Resource_4pgge"),
-1001: SubResource("Resource_x10l4"),
-1002: SubResource("Resource_4nwlg"),
-1100: SubResource("Resource_3sflf"),
-1101: SubResource("Resource_akr2b"),
-1401: SubResource("Resource_hhlid"),
-2000: SubResource("Resource_ad63f"),
-2001: SubResource("Resource_vtg84"),
-2002: SubResource("Resource_bs8pu"),
-2010: SubResource("Resource_trndp"),
-2011: SubResource("Resource_rn04t"),
-2020: SubResource("Resource_x502p"),
-2021: SubResource("Resource_pgomd"),
-2030: SubResource("Resource_6gfd3"),
-2031: SubResource("Resource_2tq7i"),
-2040: SubResource("Resource_m730u"),
-2100: SubResource("Resource_qio0g"),
-2101: SubResource("Resource_2rec6"),
-2102: SubResource("Resource_v3gm5"),
-2110: SubResource("Resource_urjnh"),
-2111: SubResource("Resource_hndaj"),
-2112: SubResource("Resource_e6c07"),
-2120: SubResource("Resource_o5e60"),
-2121: SubResource("Resource_c5imx"),
-2122: SubResource("Resource_bbrf8"),
-2130: SubResource("Resource_wo6uk"),
-2131: SubResource("Resource_xb6i4"),
-2132: SubResource("Resource_so11v"),
-2140: SubResource("Resource_i6ryk"),
-2141: SubResource("Resource_etst2"),
-2142: SubResource("Resource_thh7c"),
-2200: SubResource("Resource_r27ea"),
-2201: SubResource("Resource_g5n8f"),
-2210: SubResource("Resource_goc4h"),
-2211: SubResource("Resource_qauof"),
-2212: SubResource("Resource_8rbwb"),
-2220: SubResource("Resource_8g4dg"),
-2221: SubResource("Resource_0h8bg"),
-2222: SubResource("Resource_k7qqc"),
-2230: SubResource("Resource_7mpeu"),
-2231: SubResource("Resource_ssbmp")
+1000: SubResource("Resource_4nwlg"),
+1001: SubResource("Resource_3sflf"),
+1002: SubResource("Resource_akr2b"),
+1100: SubResource("Resource_hhlid"),
+1101: SubResource("Resource_ad63f"),
+1401: SubResource("Resource_vtg84"),
+2000: SubResource("Resource_bs8pu"),
+2001: SubResource("Resource_trndp"),
+2002: SubResource("Resource_rn04t"),
+2010: SubResource("Resource_x502p"),
+2011: SubResource("Resource_pgomd"),
+2020: SubResource("Resource_6gfd3"),
+2021: SubResource("Resource_2tq7i"),
+2030: SubResource("Resource_m730u"),
+2031: SubResource("Resource_qio0g"),
+2040: SubResource("Resource_2rec6"),
+2100: SubResource("Resource_v3gm5"),
+2101: SubResource("Resource_urjnh"),
+2102: SubResource("Resource_hndaj"),
+2110: SubResource("Resource_e6c07"),
+2111: SubResource("Resource_o5e60"),
+2112: SubResource("Resource_c5imx"),
+2120: SubResource("Resource_bbrf8"),
+2121: SubResource("Resource_wo6uk"),
+2122: SubResource("Resource_xb6i4"),
+2130: SubResource("Resource_so11v"),
+2131: SubResource("Resource_i6ryk"),
+2132: SubResource("Resource_etst2"),
+2140: SubResource("Resource_thh7c"),
+2141: SubResource("Resource_r27ea"),
+2142: SubResource("Resource_g5n8f"),
+2200: SubResource("Resource_goc4h"),
+2201: SubResource("Resource_qauof"),
+2210: SubResource("Resource_8rbwb"),
+2211: SubResource("Resource_8g4dg"),
+2212: SubResource("Resource_0h8bg"),
+2220: SubResource("Resource_k7qqc"),
+2221: SubResource("Resource_7mpeu"),
+2222: SubResource("Resource_ssbmp"),
+2230: SubResource("Resource_y3que"),
+2231: SubResource("Resource_6coot")
 }

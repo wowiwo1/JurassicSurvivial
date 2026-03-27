@@ -1103,6 +1103,36 @@ action_id = "1001"
 
 [sub_resource type="Resource" id="Resource_p5tud"]
 script = ExtResource("1_bxgu5")
+id = 40049
+name = "개구리사체"
+desc = "잡은 개구리입니다. 작지만 단백질이 됩니다."
+type = 4
+weight = 1
+option_id = "1001/2001"
+action_id = "1000"
+
+[sub_resource type="Resource" id="Resource_if6e5"]
+script = ExtResource("1_bxgu5")
+id = 40050
+name = "도롱뇽사체"
+desc = "잡은 도롱뇽입니다. 미끈거리지만 먹을 수 있습니다."
+type = 4
+weight = 1
+option_id = "1001/2001"
+action_id = "1000"
+
+[sub_resource type="Resource" id="Resource_3pj5v"]
+script = ExtResource("1_bxgu5")
+id = 40051
+name = "도마뱀사체"
+desc = "잡은 도마뱀입니다. 구우면 먹을 만합니다."
+type = 4
+weight = 1
+option_id = "1001/2001"
+action_id = "1000"
+
+[sub_resource type="Resource" id="Resource_na5ak"]
+script = ExtResource("1_bxgu5")
 id = 50001
 name = "돌칼"
 desc = "칼 계열의 도구입니다."
@@ -1110,7 +1140,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_if6e5"]
+[sub_resource type="Resource" id="Resource_w33am"]
 script = ExtResource("1_bxgu5")
 id = 50002
 name = "뼈칼"
@@ -1119,7 +1149,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_3pj5v"]
+[sub_resource type="Resource" id="Resource_bd4fo"]
 script = ExtResource("1_bxgu5")
 id = 50003
 name = "강화칼"
@@ -1128,7 +1158,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_na5ak"]
+[sub_resource type="Resource" id="Resource_ah4ps"]
 script = ExtResource("1_bxgu5")
 id = 50004
 name = "주먹도끼"
@@ -1137,7 +1167,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_w33am"]
+[sub_resource type="Resource" id="Resource_wh1bu"]
 script = ExtResource("1_bxgu5")
 id = 50005
 name = "뼈손도끼"
@@ -1146,7 +1176,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_bd4fo"]
+[sub_resource type="Resource" id="Resource_ehb6x"]
 script = ExtResource("1_bxgu5")
 id = 50006
 name = "강화손도끼"
@@ -1155,7 +1185,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_ah4ps"]
+[sub_resource type="Resource" id="Resource_hon12"]
 script = ExtResource("1_bxgu5")
 id = 50007
 name = "돌벌목도끼"
@@ -1164,7 +1194,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_wh1bu"]
+[sub_resource type="Resource" id="Resource_akosr"]
 script = ExtResource("1_bxgu5")
 id = 50008
 name = "뼈벌목도끼"
@@ -1173,7 +1203,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_ehb6x"]
+[sub_resource type="Resource" id="Resource_up6ec"]
 script = ExtResource("1_bxgu5")
 id = 50009
 name = "강화벌목도끼"
@@ -1182,7 +1212,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_hon12"]
+[sub_resource type="Resource" id="Resource_ijxui"]
 script = ExtResource("1_bxgu5")
 id = 50010
 name = "돌긁개"
@@ -1191,7 +1221,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_akosr"]
+[sub_resource type="Resource" id="Resource_k3oc1"]
 script = ExtResource("1_bxgu5")
 id = 50011
 name = "뼈긁개"
@@ -1200,7 +1230,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_up6ec"]
+[sub_resource type="Resource" id="Resource_trvhg"]
 script = ExtResource("1_bxgu5")
 id = 50012
 name = "강화긁개"
@@ -1209,7 +1239,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_ijxui"]
+[sub_resource type="Resource" id="Resource_dctpu"]
 script = ExtResource("1_bxgu5")
 id = 50013
 name = "돌송곳"
@@ -1218,7 +1248,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_k3oc1"]
+[sub_resource type="Resource" id="Resource_2ph6t"]
 script = ExtResource("1_bxgu5")
 id = 50014
 name = "뼈송곳"
@@ -1227,7 +1257,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_trvhg"]
+[sub_resource type="Resource" id="Resource_wrkk8"]
 script = ExtResource("1_bxgu5")
 id = 50015
 name = "강화송곳"
@@ -1236,7 +1266,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_dctpu"]
+[sub_resource type="Resource" id="Resource_0uogk"]
 script = ExtResource("1_bxgu5")
 id = 50016
 name = "돌망치"
@@ -1245,7 +1275,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_2ph6t"]
+[sub_resource type="Resource" id="Resource_6j1no"]
 script = ExtResource("1_bxgu5")
 id = 50017
 name = "뼈망치"
@@ -1254,7 +1284,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_wrkk8"]
+[sub_resource type="Resource" id="Resource_p11bl"]
 script = ExtResource("1_bxgu5")
 id = 50018
 name = "강화망치"
@@ -1263,7 +1293,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_0uogk"]
+[sub_resource type="Resource" id="Resource_pnsu7"]
 script = ExtResource("1_bxgu5")
 id = 50019
 name = "돌작살"
@@ -1272,7 +1302,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_6j1no"]
+[sub_resource type="Resource" id="Resource_ue67h"]
 script = ExtResource("1_bxgu5")
 id = 50020
 name = "뼈작살"
@@ -1281,7 +1311,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_p11bl"]
+[sub_resource type="Resource" id="Resource_0c0dt"]
 script = ExtResource("1_bxgu5")
 id = 50021
 name = "강화작살"
@@ -1290,7 +1320,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_pnsu7"]
+[sub_resource type="Resource" id="Resource_oxyq8"]
 script = ExtResource("1_bxgu5")
 id = 50022
 name = "돌단창"
@@ -1299,7 +1329,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_ue67h"]
+[sub_resource type="Resource" id="Resource_xtijw"]
 script = ExtResource("1_bxgu5")
 id = 50023
 name = "뼈단창"
@@ -1308,7 +1338,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_0c0dt"]
+[sub_resource type="Resource" id="Resource_tnevw"]
 script = ExtResource("1_bxgu5")
 id = 50024
 name = "강화단창"
@@ -1317,7 +1347,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_oxyq8"]
+[sub_resource type="Resource" id="Resource_3oft4"]
 script = ExtResource("1_bxgu5")
 id = 50025
 name = "돌해체칼"
@@ -1326,7 +1356,7 @@ type = 5
 weight = 1
 durability = 20
 
-[sub_resource type="Resource" id="Resource_xtijw"]
+[sub_resource type="Resource" id="Resource_jiq16"]
 script = ExtResource("1_bxgu5")
 id = 50026
 name = "뼈해체칼"
@@ -1335,7 +1365,7 @@ type = 5
 weight = 1
 durability = 30
 
-[sub_resource type="Resource" id="Resource_tnevw"]
+[sub_resource type="Resource" id="Resource_as6j2"]
 script = ExtResource("1_bxgu5")
 id = 50027
 name = "강화해체칼"
@@ -1344,7 +1374,7 @@ type = 5
 weight = 1
 durability = 45
 
-[sub_resource type="Resource" id="Resource_3oft4"]
+[sub_resource type="Resource" id="Resource_hpsms"]
 script = ExtResource("1_bxgu5")
 id = 50028
 name = "거친횃불"
@@ -1354,7 +1384,7 @@ weight = 1
 option_id = "9110"
 durability = 15
 
-[sub_resource type="Resource" id="Resource_jiq16"]
+[sub_resource type="Resource" id="Resource_pesk3"]
 script = ExtResource("1_bxgu5")
 id = 50029
 name = "기본횃불"
@@ -1364,7 +1394,7 @@ weight = 1
 option_id = "9110"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_as6j2"]
+[sub_resource type="Resource" id="Resource_rg7ti"]
 script = ExtResource("1_bxgu5")
 id = 50030
 name = "강화횃불"
@@ -1374,7 +1404,7 @@ weight = 1
 option_id = "9110"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_hpsms"]
+[sub_resource type="Resource" id="Resource_v060b"]
 script = ExtResource("1_bxgu5")
 id = 50031
 name = "손비비개"
@@ -1383,7 +1413,7 @@ type = 5
 weight = 1
 durability = 15
 
-[sub_resource type="Resource" id="Resource_pesk3"]
+[sub_resource type="Resource" id="Resource_85vya"]
 script = ExtResource("1_bxgu5")
 id = 50032
 name = "부싯점화기"
@@ -1392,7 +1422,7 @@ type = 5
 weight = 1
 durability = 25
 
-[sub_resource type="Resource" id="Resource_rg7ti"]
+[sub_resource type="Resource" id="Resource_a267c"]
 script = ExtResource("1_bxgu5")
 id = 50033
 name = "활비비개"
@@ -1401,7 +1431,7 @@ type = 5
 weight = 1
 durability = 40
 
-[sub_resource type="Resource" id="Resource_v060b"]
+[sub_resource type="Resource" id="Resource_fm7s0"]
 script = ExtResource("1_bxgu5")
 id = 50034
 name = "거친여과막"
@@ -1410,7 +1440,7 @@ type = 5
 weight = 1
 durability = 15
 
-[sub_resource type="Resource" id="Resource_85vya"]
+[sub_resource type="Resource" id="Resource_k2dgx"]
 script = ExtResource("1_bxgu5")
 id = 50035
 name = "기본여과막"
@@ -1419,7 +1449,7 @@ type = 5
 weight = 1
 durability = 25
 
-[sub_resource type="Resource" id="Resource_a267c"]
+[sub_resource type="Resource" id="Resource_adsp7"]
 script = ExtResource("1_bxgu5")
 id = 50037
 name = "거친물주머니"
@@ -1428,7 +1458,7 @@ type = 5
 weight = 1
 durability = 15
 
-[sub_resource type="Resource" id="Resource_fm7s0"]
+[sub_resource type="Resource" id="Resource_wgto4"]
 script = ExtResource("1_bxgu5")
 id = 50038
 name = "기본물주머니"
@@ -1437,7 +1467,7 @@ type = 5
 weight = 1
 durability = 25
 
-[sub_resource type="Resource" id="Resource_k2dgx"]
+[sub_resource type="Resource" id="Resource_3gipq"]
 script = ExtResource("1_bxgu5")
 id = 50039
 name = "강화물주머니"
@@ -1446,7 +1476,7 @@ type = 5
 weight = 1
 durability = 40
 
-[sub_resource type="Resource" id="Resource_adsp7"]
+[sub_resource type="Resource" id="Resource_y2dvv"]
 script = ExtResource("1_bxgu5")
 id = 50040
 name = "거친가죽주머니"
@@ -1455,7 +1485,7 @@ type = 5
 weight = 1
 durability = 15
 
-[sub_resource type="Resource" id="Resource_wgto4"]
+[sub_resource type="Resource" id="Resource_wmf8s"]
 script = ExtResource("1_bxgu5")
 id = 50041
 name = "기본가죽주머니"
@@ -1464,7 +1494,7 @@ type = 5
 weight = 1
 durability = 25
 
-[sub_resource type="Resource" id="Resource_3gipq"]
+[sub_resource type="Resource" id="Resource_k7yvq"]
 script = ExtResource("1_bxgu5")
 id = 50042
 name = "강화가죽주머니"
@@ -1473,7 +1503,7 @@ type = 5
 weight = 1
 durability = 40
 
-[sub_resource type="Resource" id="Resource_y2dvv"]
+[sub_resource type="Resource" id="Resource_11xcv"]
 script = ExtResource("1_bxgu5")
 id = 50043
 name = "거친낚싯대"
@@ -1483,7 +1513,7 @@ weight = 1
 option_id = "9007"
 durability = 15
 
-[sub_resource type="Resource" id="Resource_wmf8s"]
+[sub_resource type="Resource" id="Resource_ttxok"]
 script = ExtResource("1_bxgu5")
 id = 50044
 name = "기본낚싯대"
@@ -1493,7 +1523,7 @@ weight = 1
 option_id = "9007"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_k7yvq"]
+[sub_resource type="Resource" id="Resource_bd4mg"]
 script = ExtResource("1_bxgu5")
 id = 50045
 name = "강화낚싯대"
@@ -1503,7 +1533,7 @@ weight = 1
 option_id = "9007"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_11xcv"]
+[sub_resource type="Resource" id="Resource_epaso"]
 script = ExtResource("1_bxgu5")
 id = 50046
 name = "거친낚시바늘"
@@ -1512,7 +1542,7 @@ type = 5
 weight = 1
 durability = 15
 
-[sub_resource type="Resource" id="Resource_ttxok"]
+[sub_resource type="Resource" id="Resource_ei515"]
 script = ExtResource("1_bxgu5")
 id = 50047
 name = "기본낚시바늘"
@@ -1521,7 +1551,7 @@ type = 5
 weight = 1
 durability = 25
 
-[sub_resource type="Resource" id="Resource_bd4mg"]
+[sub_resource type="Resource" id="Resource_wuo8w"]
 script = ExtResource("1_bxgu5")
 id = 50048
 name = "강화낚시바늘"
@@ -1530,7 +1560,7 @@ type = 5
 weight = 1
 durability = 40
 
-[sub_resource type="Resource" id="Resource_epaso"]
+[sub_resource type="Resource" id="Resource_5nyfl"]
 script = ExtResource("1_bxgu5")
 id = 50049
 name = "얇은붕대"
@@ -1540,7 +1570,7 @@ weight = 1
 option_id = "2210/2220"
 action_id = "1002"
 
-[sub_resource type="Resource" id="Resource_ei515"]
+[sub_resource type="Resource" id="Resource_0m4t3"]
 script = ExtResource("1_bxgu5")
 id = 50050
 name = "기본붕대"
@@ -1550,7 +1580,7 @@ weight = 1
 option_id = "2211/2221"
 action_id = "1002"
 
-[sub_resource type="Resource" id="Resource_wuo8w"]
+[sub_resource type="Resource" id="Resource_n262f"]
 script = ExtResource("1_bxgu5")
 id = 50051
 name = "강화붕대"
@@ -1560,7 +1590,7 @@ weight = 1
 option_id = "2212/2222"
 action_id = "1002"
 
-[sub_resource type="Resource" id="Resource_5nyfl"]
+[sub_resource type="Resource" id="Resource_ymfqa"]
 script = ExtResource("1_bxgu5")
 id = 50052
 name = "연한약연고"
@@ -1570,7 +1600,7 @@ weight = 1
 option_id = "2200/2230"
 action_id = "1002"
 
-[sub_resource type="Resource" id="Resource_0m4t3"]
+[sub_resource type="Resource" id="Resource_y4nrs"]
 script = ExtResource("1_bxgu5")
 id = 50053
 name = "기본약연고"
@@ -1580,7 +1610,7 @@ weight = 1
 option_id = "2201/2231"
 action_id = "1002"
 
-[sub_resource type="Resource" id="Resource_n262f"]
+[sub_resource type="Resource" id="Resource_nocg6"]
 script = ExtResource("1_bxgu5")
 id = 60001
 name = "풀망토"
@@ -1591,7 +1621,7 @@ option_id = "2100/2130"
 action_id = "1003"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_ymfqa"]
+[sub_resource type="Resource" id="Resource_t6y7f"]
 script = ExtResource("1_bxgu5")
 id = 60002
 name = "가죽망토"
@@ -1602,7 +1632,7 @@ option_id = "2101/2131"
 action_id = "1003"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_y4nrs"]
+[sub_resource type="Resource" id="Resource_7w7oe"]
 script = ExtResource("1_bxgu5")
 id = 60003
 name = "강화망토"
@@ -1613,7 +1643,7 @@ option_id = "2102/2132"
 action_id = "1003"
 durability = 60
 
-[sub_resource type="Resource" id="Resource_nocg6"]
+[sub_resource type="Resource" id="Resource_pu2xe"]
 script = ExtResource("1_bxgu5")
 id = 60004
 name = "풀조끼"
@@ -1624,7 +1654,7 @@ option_id = "2110/2120"
 action_id = "1003"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_t6y7f"]
+[sub_resource type="Resource" id="Resource_8sl2k"]
 script = ExtResource("1_bxgu5")
 id = 60005
 name = "가죽조끼"
@@ -1635,7 +1665,7 @@ option_id = "2111/2121"
 action_id = "1003"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_7w7oe"]
+[sub_resource type="Resource" id="Resource_svmyk"]
 script = ExtResource("1_bxgu5")
 id = 60006
 name = "강화조끼"
@@ -1646,7 +1676,7 @@ option_id = "2112/2122"
 action_id = "1003"
 durability = 60
 
-[sub_resource type="Resource" id="Resource_pu2xe"]
+[sub_resource type="Resource" id="Resource_tk3pj"]
 script = ExtResource("1_bxgu5")
 id = 60007
 name = "풀부츠"
@@ -1657,7 +1687,7 @@ option_id = "2140/2110"
 action_id = "1003"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_8sl2k"]
+[sub_resource type="Resource" id="Resource_10oms"]
 script = ExtResource("1_bxgu5")
 id = 60008
 name = "가죽부츠"
@@ -1668,7 +1698,7 @@ option_id = "2141/2111"
 action_id = "1003"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_svmyk"]
+[sub_resource type="Resource" id="Resource_e5c6y"]
 script = ExtResource("1_bxgu5")
 id = 60009
 name = "강화부츠"
@@ -1679,7 +1709,7 @@ option_id = "2142/2112"
 action_id = "1003"
 durability = 60
 
-[sub_resource type="Resource" id="Resource_tk3pj"]
+[sub_resource type="Resource" id="Resource_tkj8m"]
 script = ExtResource("1_bxgu5")
 id = 60010
 name = "풀장갑"
@@ -1690,7 +1720,7 @@ option_id = "2120/2130"
 action_id = "1003"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_10oms"]
+[sub_resource type="Resource" id="Resource_hi7l7"]
 script = ExtResource("1_bxgu5")
 id = 60011
 name = "가죽장갑"
@@ -1701,7 +1731,7 @@ option_id = "2121/2131"
 action_id = "1003"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_e5c6y"]
+[sub_resource type="Resource" id="Resource_dtxvm"]
 script = ExtResource("1_bxgu5")
 id = 60012
 name = "강화장갑"
@@ -1712,7 +1742,7 @@ option_id = "2122/2132"
 action_id = "1003"
 durability = 60
 
-[sub_resource type="Resource" id="Resource_tkj8m"]
+[sub_resource type="Resource" id="Resource_o3nrl"]
 script = ExtResource("1_bxgu5")
 id = 60013
 name = "풀배낭"
@@ -1724,7 +1754,7 @@ option_id = "2140/2120"
 action_id = "1003"
 durability = 25
 
-[sub_resource type="Resource" id="Resource_hi7l7"]
+[sub_resource type="Resource" id="Resource_kw84y"]
 script = ExtResource("1_bxgu5")
 id = 60014
 name = "가죽배낭"
@@ -1736,7 +1766,7 @@ option_id = "2141/2121"
 action_id = "1003"
 durability = 40
 
-[sub_resource type="Resource" id="Resource_dtxvm"]
+[sub_resource type="Resource" id="Resource_v1o6g"]
 script = ExtResource("1_bxgu5")
 id = 60015
 name = "강화배낭"
@@ -1877,71 +1907,74 @@ records = {
 40045: SubResource("Resource_odkhm"),
 40046: SubResource("Resource_lts1v"),
 40047: SubResource("Resource_lewqf"),
-50001: SubResource("Resource_p5tud"),
-50002: SubResource("Resource_if6e5"),
-50003: SubResource("Resource_3pj5v"),
-50004: SubResource("Resource_na5ak"),
-50005: SubResource("Resource_w33am"),
-50006: SubResource("Resource_bd4fo"),
-50007: SubResource("Resource_ah4ps"),
-50008: SubResource("Resource_wh1bu"),
-50009: SubResource("Resource_ehb6x"),
-50010: SubResource("Resource_hon12"),
-50011: SubResource("Resource_akosr"),
-50012: SubResource("Resource_up6ec"),
-50013: SubResource("Resource_ijxui"),
-50014: SubResource("Resource_k3oc1"),
-50015: SubResource("Resource_trvhg"),
-50016: SubResource("Resource_dctpu"),
-50017: SubResource("Resource_2ph6t"),
-50018: SubResource("Resource_wrkk8"),
-50019: SubResource("Resource_0uogk"),
-50020: SubResource("Resource_6j1no"),
-50021: SubResource("Resource_p11bl"),
-50022: SubResource("Resource_pnsu7"),
-50023: SubResource("Resource_ue67h"),
-50024: SubResource("Resource_0c0dt"),
-50025: SubResource("Resource_oxyq8"),
-50026: SubResource("Resource_xtijw"),
-50027: SubResource("Resource_tnevw"),
-50028: SubResource("Resource_3oft4"),
-50029: SubResource("Resource_jiq16"),
-50030: SubResource("Resource_as6j2"),
-50031: SubResource("Resource_hpsms"),
-50032: SubResource("Resource_pesk3"),
-50033: SubResource("Resource_rg7ti"),
-50034: SubResource("Resource_v060b"),
-50035: SubResource("Resource_85vya"),
-50037: SubResource("Resource_a267c"),
-50038: SubResource("Resource_fm7s0"),
-50039: SubResource("Resource_k2dgx"),
-50040: SubResource("Resource_adsp7"),
-50041: SubResource("Resource_wgto4"),
-50042: SubResource("Resource_3gipq"),
-50043: SubResource("Resource_y2dvv"),
-50044: SubResource("Resource_wmf8s"),
-50045: SubResource("Resource_k7yvq"),
-50046: SubResource("Resource_11xcv"),
-50047: SubResource("Resource_ttxok"),
-50048: SubResource("Resource_bd4mg"),
-50049: SubResource("Resource_epaso"),
-50050: SubResource("Resource_ei515"),
-50051: SubResource("Resource_wuo8w"),
-50052: SubResource("Resource_5nyfl"),
-50053: SubResource("Resource_0m4t3"),
-60001: SubResource("Resource_n262f"),
-60002: SubResource("Resource_ymfqa"),
-60003: SubResource("Resource_y4nrs"),
-60004: SubResource("Resource_nocg6"),
-60005: SubResource("Resource_t6y7f"),
-60006: SubResource("Resource_7w7oe"),
-60007: SubResource("Resource_pu2xe"),
-60008: SubResource("Resource_8sl2k"),
-60009: SubResource("Resource_svmyk"),
-60010: SubResource("Resource_tk3pj"),
-60011: SubResource("Resource_10oms"),
-60012: SubResource("Resource_e5c6y"),
-60013: SubResource("Resource_tkj8m"),
-60014: SubResource("Resource_hi7l7"),
-60015: SubResource("Resource_dtxvm")
+40049: SubResource("Resource_p5tud"),
+40050: SubResource("Resource_if6e5"),
+40051: SubResource("Resource_3pj5v"),
+50001: SubResource("Resource_na5ak"),
+50002: SubResource("Resource_w33am"),
+50003: SubResource("Resource_bd4fo"),
+50004: SubResource("Resource_ah4ps"),
+50005: SubResource("Resource_wh1bu"),
+50006: SubResource("Resource_ehb6x"),
+50007: SubResource("Resource_hon12"),
+50008: SubResource("Resource_akosr"),
+50009: SubResource("Resource_up6ec"),
+50010: SubResource("Resource_ijxui"),
+50011: SubResource("Resource_k3oc1"),
+50012: SubResource("Resource_trvhg"),
+50013: SubResource("Resource_dctpu"),
+50014: SubResource("Resource_2ph6t"),
+50015: SubResource("Resource_wrkk8"),
+50016: SubResource("Resource_0uogk"),
+50017: SubResource("Resource_6j1no"),
+50018: SubResource("Resource_p11bl"),
+50019: SubResource("Resource_pnsu7"),
+50020: SubResource("Resource_ue67h"),
+50021: SubResource("Resource_0c0dt"),
+50022: SubResource("Resource_oxyq8"),
+50023: SubResource("Resource_xtijw"),
+50024: SubResource("Resource_tnevw"),
+50025: SubResource("Resource_3oft4"),
+50026: SubResource("Resource_jiq16"),
+50027: SubResource("Resource_as6j2"),
+50028: SubResource("Resource_hpsms"),
+50029: SubResource("Resource_pesk3"),
+50030: SubResource("Resource_rg7ti"),
+50031: SubResource("Resource_v060b"),
+50032: SubResource("Resource_85vya"),
+50033: SubResource("Resource_a267c"),
+50034: SubResource("Resource_fm7s0"),
+50035: SubResource("Resource_k2dgx"),
+50037: SubResource("Resource_adsp7"),
+50038: SubResource("Resource_wgto4"),
+50039: SubResource("Resource_3gipq"),
+50040: SubResource("Resource_y2dvv"),
+50041: SubResource("Resource_wmf8s"),
+50042: SubResource("Resource_k7yvq"),
+50043: SubResource("Resource_11xcv"),
+50044: SubResource("Resource_ttxok"),
+50045: SubResource("Resource_bd4mg"),
+50046: SubResource("Resource_epaso"),
+50047: SubResource("Resource_ei515"),
+50048: SubResource("Resource_wuo8w"),
+50049: SubResource("Resource_5nyfl"),
+50050: SubResource("Resource_0m4t3"),
+50051: SubResource("Resource_n262f"),
+50052: SubResource("Resource_ymfqa"),
+50053: SubResource("Resource_y4nrs"),
+60001: SubResource("Resource_nocg6"),
+60002: SubResource("Resource_t6y7f"),
+60003: SubResource("Resource_7w7oe"),
+60004: SubResource("Resource_pu2xe"),
+60005: SubResource("Resource_8sl2k"),
+60006: SubResource("Resource_svmyk"),
+60007: SubResource("Resource_tk3pj"),
+60008: SubResource("Resource_10oms"),
+60009: SubResource("Resource_e5c6y"),
+60010: SubResource("Resource_tkj8m"),
+60011: SubResource("Resource_hi7l7"),
+60012: SubResource("Resource_dtxvm"),
+60013: SubResource("Resource_o3nrl"),
+60014: SubResource("Resource_kw84y"),
+60015: SubResource("Resource_v1o6g")
 }
