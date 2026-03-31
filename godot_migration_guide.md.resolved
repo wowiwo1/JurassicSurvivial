@@ -12,7 +12,7 @@
 2.  **데이터 주도 설계 (Data-Driven Design):**
     *   기획 데이터를 통으로 받아서 고도의 리소스(`Resource`)화하고, 이를 사용해 게임을 초기화하는 것이 핵심입니다.
     *   기획자가 정의한 `Operator`와 `Operation` 값을 기획 데이터(GameTable)로 받아서 `StatusManager`가 일괄 처리하게 설계합니다.
-    *   해당 테이블 데이터 리소스들은 `res://assets/game_table/data/` 경로에 저장되어 있습니다.
+    *   해당 테이블 데이터 리소스들은 `res://Assets/GameTable/Data/` 경로에 저장되어 있습니다.
 3.  **옵저버 & 쿼리 패턴 분리:**
     *   **실행/결과 (Event):** "탐험 완료", "제작 성공" 등은 다른 노드들을 직접 참조하지 않고 `SignalBus`를 통해 전역 방송합니다.
     *   **질의/검증 (Query):** "제작이 가능한가?", "허기가 몇인가?" 등 즉각적인 리턴(True/False)이 필요한 경우는 매니저의 함수를 직접 호출(Direct Call)하여 결재를 받습니다.
@@ -43,7 +43,7 @@
 
 ## 📦 3. 리소스 및 데이터 관리 전략 (Resources & Data)
 
-성능이 뛰어난 고도의 `Custom Resource (.tres)`를 사용합니다. 데이터 테이블 리소스는 `res://assets/game_table/data/` 에 저장되어 있습니다. (예: `action_table.tres`, `card_table.tres`)
+성능이 뛰어난 고도의 `Custom Resource (.tres)`를 사용합니다. 데이터 테이블 리소스는 `res://Assets/GameTable/Data/` 에 저장되어 있습니다. (예: `action_table.tres`, `card_table.tres`)
 
 ### 정적 데이터 (Static Data = Resource)
 *   **어디에?:** `res://assets/game_table/data/` 폴더 하위에 보관.

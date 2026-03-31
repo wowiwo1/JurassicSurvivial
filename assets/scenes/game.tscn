@@ -1,3 +1,90 @@
 [gd_scene format=3 uid="uid://ca1ma21c6s41w"]
 
-[node name="Node2D" type="Node2D" unique_id=469578404]
+[ext_resource type="PackedScene" uid="uid://bvs2fw8l0kv1a" path="res://Assets/Scenes/Card/Card.tscn" id="1_cycvv"]
+[ext_resource type="Script" uid="uid://eisf3unrwqbp" path="res://Assets/Scripts/Board/CameraController.gd" id="1_dgnlb"]
+[ext_resource type="Script" uid="uid://cn2uualgwo8cu" path="res://Assets/Scripts/Systems/CardSpawner.gd" id="1_ltsxh"]
+[ext_resource type="Script" uid="uid://hiehw1oy3g74" path="res://Assets/Scripts/Systems/CraftSystem.gd" id="2_jqtiv"]
+[ext_resource type="Script" uid="uid://ciej3xl35td7l" path="res://Assets/Scripts/Systems/ExploreSystem.gd" id="3_53qdw"]
+[ext_resource type="Texture2D" uid="uid://bp06yeyblcn23" path="res://Assets/Sprites/Card/Pool/Card_30011_00012_.png" id="6_4e1g7"]
+[ext_resource type="Texture2D" uid="uid://c7wuwjcnswrin" path="res://Assets/Sprites/Card/Pool/Card_30036.png" id="7_e0nf8"]
+[ext_resource type="Texture2D" uid="uid://c74wp786piiy5" path="res://Assets/Sprites/Card/Pool/Card_30011.png" id="8_g3py7"]
+[ext_resource type="Texture2D" uid="uid://b4h0ke3fra737" path="res://Assets/Sprites/Card/Pool/Card_970204_00001_.png" id="9_tim1p"]
+
+[node name="Game" type="Node" unique_id=1611048586]
+
+[node name="CardSpawner" type="Node" parent="." unique_id=32281396 node_paths=PackedStringArray("board_container") groups=["CardSpawner"]]
+script = ExtResource("1_ltsxh")
+card_scene = ExtResource("1_cycvv")
+board_container = NodePath("../Board")
+
+[node name="CraftSystem" type="Node" parent="." unique_id=1015741477 groups=["CraftSystem"]]
+script = ExtResource("2_jqtiv")
+
+[node name="ExploreSystem" type="Node" parent="." unique_id=1912490960 groups=["ExploreSystem"]]
+script = ExtResource("3_53qdw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=981638371]
+position = Vector2(-5, 0)
+script = ExtResource("1_dgnlb")
+
+[node name="Board" type="Node2D" parent="." unique_id=1092639664]
+
+[node name="Card" parent="Board" unique_id=724276090 instance=ExtResource("1_cycvv")]
+offset_left = -170.0
+offset_top = -71.0
+offset_right = -70.0
+offset_bottom = 69.0
+card_id = "item_wood"
+
+[node name="Image" parent="Board/Card/DropSensor" parent_id_path=PackedInt32Array(724276090, 1613814561) index="0" unique_id=2101051674]
+scale = Vector2(0.305, 0.305)
+texture = ExtResource("6_4e1g7")
+
+[node name="Name" parent="Board/Card/UI" parent_id_path=PackedInt32Array(724276090, 1077107522) index="0" unique_id=1414240249]
+modulate = Color(0, 0, 0, 1)
+text = " 나무"
+
+[node name="Card2" parent="Board" unique_id=37950709 instance=ExtResource("1_cycvv")]
+card_id = "item_stone"
+
+[node name="Image" parent="Board/Card2/DropSensor" parent_id_path=PackedInt32Array(37950709, 1613814561) index="0" unique_id=2101051674]
+scale = Vector2(0.285, 0.285)
+texture = ExtResource("7_e0nf8")
+
+[node name="Name" parent="Board/Card2/UI" parent_id_path=PackedInt32Array(37950709, 1077107522) index="0" unique_id=1414240249]
+modulate = Color(0, 0, 0, 1)
+text = " 돌"
+
+[node name="Card3" parent="Board" unique_id=1706098358 instance=ExtResource("1_cycvv")]
+offset_left = 71.0
+offset_right = 171.0
+card_id = "map_1"
+
+[node name="Image" parent="Board/Card3/DropSensor" parent_id_path=PackedInt32Array(1706098358, 1613814561) index="0" unique_id=2101051674]
+scale = Vector2(0.37, 0.37)
+texture = ExtResource("8_g3py7")
+
+[node name="Name" parent="Board/Card3/UI" parent_id_path=PackedInt32Array(1706098358, 1077107522) index="0" unique_id=1414240249]
+modulate = Color(0, 0, 0, 1)
+text = " 정글"
+
+[node name="Card4" parent="Board" unique_id=1050763253 instance=ExtResource("1_cycvv")]
+offset_left = 69.0
+offset_top = 115.0
+offset_right = 169.0
+offset_bottom = 255.0
+card_id = "char_1"
+
+[node name="Image" parent="Board/Card4/DropSensor" parent_id_path=PackedInt32Array(1050763253, 1613814561) index="0" unique_id=2101051674]
+position = Vector2(50, 69)
+scale = Vector2(0.315, 0.315)
+texture = ExtResource("9_tim1p")
+
+[node name="Name" parent="Board/Card4/UI" parent_id_path=PackedInt32Array(1050763253, 1077107522) index="0" unique_id=1414240249]
+modulate = Color(0, 0, 0, 1)
+text = " 플레이어"
+
+[editable path="Board/Card"]
+[editable path="Board/Card2"]
+[editable path="Board/Card3"]
+[editable path="Board/Card4"]

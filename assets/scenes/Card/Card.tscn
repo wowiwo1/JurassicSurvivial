@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bvs2fw8l0kv1a"]
+
+[ext_resource type="Script" uid="uid://c5vtpd7wbbvvp" path="res://Assets/Scripts/Card/Card.gd" id="1_7ux25"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_dxc7d"]
+size = Vector2(50, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_omavx"]
+size = Vector2(100.00006, 140)
+
+[node name="Card" type="Control" unique_id=724276090 node_paths=PackedStringArray("image")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -70.0
+offset_right = 50.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(50, 70)
+script = ExtResource("1_7ux25")
+image = NodePath("DropSensor/Image")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1038618572]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="DropSensor" type="Area2D" parent="." unique_id=1613814561]
+
+[node name="Image" type="Sprite2D" parent="DropSensor" unique_id=2101051674]
+position = Vector2(50, 70)
+texture = SubResource("PlaceholderTexture2D_dxc7d")
+
+[node name="Collision" type="CollisionShape2D" parent="DropSensor" unique_id=1100013799]
+position = Vector2(49.99997, 70)
+shape = SubResource("RectangleShape2D_omavx")
+
+[node name="UI" type="VBoxContainer" parent="." unique_id=1077107522]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Name" type="Label" parent="UI" unique_id=1414240249]
+layout_mode = 2
+text = "Name"
+
+[node name="StorageBar" type="ProgressBar" parent="UI" unique_id=1253674612]
+visible = false
+layout_mode = 2
+mouse_filter = 2

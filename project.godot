@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="JurassicSurvival"
-run/main_scene="uid://dc3vcleviob2h"
+run/main_scene="uid://ca1ma21c6s41w"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
@@ -22,6 +22,11 @@ StatusManager="*res://Assets/Scripts/Autoloads/StatusManager.gd"
 SaveManager="*res://Assets/Scripts/Autoloads/SaveManager.gd"
 SoundManager="*res://Assets/Scripts/Autoloads/SoundManager.gd"
 GlobalManager="*res://Assets/Scripts/Autoloads/GlobalManager.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 
