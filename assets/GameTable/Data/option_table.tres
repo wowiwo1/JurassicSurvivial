@@ -1,0 +1,347 @@
+[gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://b28qqmx7hnn3r"]
+
+[ext_resource type="Script" uid="uid://bwr7472atvhs" path="res://Assets/GameTable/Scripts/option_data.gd" id="1_ynyxm"]
+[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://Assets/GameTable/Scripts/table_container.gd" id="2_ivou8"]
+
+[sub_resource type="Resource" id="Resource_ynyxm"]
+script = ExtResource("1_ynyxm")
+id = 1000
+operation = "Hunger"
+value = 10.0
+desc = "허기 회복 (소)"
+
+[sub_resource type="Resource" id="Resource_ivou8"]
+script = ExtResource("1_ynyxm")
+id = 1001
+operation = "Hunger"
+value = 15.0
+desc = "허기 회복 (기본)"
+
+[sub_resource type="Resource" id="Resource_ugwnd"]
+script = ExtResource("1_ynyxm")
+id = 1002
+operation = "Hunger"
+value = 20.0
+desc = "허기 회복 (중)"
+
+[sub_resource type="Resource" id="Resource_vme85"]
+script = ExtResource("1_ynyxm")
+id = 1100
+operation = "Thirst"
+value = 15.0
+desc = "갈증 회복 (소)"
+
+[sub_resource type="Resource" id="Resource_xrxwi"]
+script = ExtResource("1_ynyxm")
+id = 1101
+operation = "Thirst"
+value = 20.0
+desc = "갈증 회복 (기본)"
+
+[sub_resource type="Resource" id="Resource_5em3y"]
+script = ExtResource("1_ynyxm")
+id = 1401
+operation = "Fatigue"
+value = -20.0
+desc = "피로 감소 (기본)"
+
+[sub_resource type="Resource" id="Resource_5qymk"]
+script = ExtResource("1_ynyxm")
+id = 2000
+operation = "Apply_Sickness"
+prob = 10
+desc = "Sickness 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_jmaas"]
+script = ExtResource("1_ynyxm")
+id = 2001
+operation = "Apply_Sickness"
+prob = 20
+desc = "Sickness 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_pxfod"]
+script = ExtResource("1_ynyxm")
+id = 2002
+operation = "Apply_Sickness"
+prob = 35
+desc = "Sickness 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_pl4vy"]
+script = ExtResource("1_ynyxm")
+id = 2010
+operation = "Apply_Bruise"
+prob = 10
+desc = "Bruise 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_u6yby"]
+script = ExtResource("1_ynyxm")
+id = 2011
+operation = "Apply_Bruise"
+prob = 20
+desc = "Bruise 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_larix"]
+script = ExtResource("1_ynyxm")
+id = 2020
+operation = "Apply_Wound"
+prob = 5
+desc = "Wound 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_f8jkq"]
+script = ExtResource("1_ynyxm")
+id = 2021
+operation = "Apply_Wound"
+prob = 10
+desc = "Wound 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_bjw4n"]
+script = ExtResource("1_ynyxm")
+id = 2030
+operation = "Apply_Burn"
+prob = 5
+desc = "Burn 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_xpdbl"]
+script = ExtResource("1_ynyxm")
+id = 2031
+operation = "Apply_Burn"
+prob = 10
+desc = "Burn 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_30o54"]
+script = ExtResource("1_ynyxm")
+id = 2040
+operation = "Apply_Sprain"
+prob = 10
+desc = "Sprain 상태 이상 부여"
+
+[sub_resource type="Resource" id="Resource_y5ici"]
+script = ExtResource("1_ynyxm")
+id = 2100
+operation = "Block_Sickness"
+prob = 15
+desc = "Sickness 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_5mmo3"]
+script = ExtResource("1_ynyxm")
+id = 2101
+operation = "Block_Sickness"
+prob = 30
+desc = "Sickness 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_1yrot"]
+script = ExtResource("1_ynyxm")
+id = 2102
+operation = "Block_Sickness"
+prob = 45
+desc = "Sickness 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_pjd3w"]
+script = ExtResource("1_ynyxm")
+id = 2110
+operation = "Block_Bruise"
+prob = 15
+desc = "Bruise 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_rhmlu"]
+script = ExtResource("1_ynyxm")
+id = 2111
+operation = "Block_Bruise"
+prob = 30
+desc = "Bruise 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_ewtx1"]
+script = ExtResource("1_ynyxm")
+id = 2112
+operation = "Block_Bruise"
+prob = 45
+desc = "Bruise 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_qeau4"]
+script = ExtResource("1_ynyxm")
+id = 2120
+operation = "Block_Wound"
+prob = 15
+desc = "Wound 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_l2ef3"]
+script = ExtResource("1_ynyxm")
+id = 2121
+operation = "Block_Wound"
+prob = 30
+desc = "Wound 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_3kbho"]
+script = ExtResource("1_ynyxm")
+id = 2122
+operation = "Block_Wound"
+prob = 45
+desc = "Wound 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_b76na"]
+script = ExtResource("1_ynyxm")
+id = 2130
+operation = "Block_Burn"
+prob = 15
+desc = "Burn 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_3wjxl"]
+script = ExtResource("1_ynyxm")
+id = 2131
+operation = "Block_Burn"
+prob = 30
+desc = "Burn 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_h15mp"]
+script = ExtResource("1_ynyxm")
+id = 2132
+operation = "Block_Burn"
+prob = 45
+desc = "Burn 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_4w6ft"]
+script = ExtResource("1_ynyxm")
+id = 2140
+operation = "Block_Sprain"
+prob = 15
+desc = "Sprain 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_66lfx"]
+script = ExtResource("1_ynyxm")
+id = 2141
+operation = "Block_Sprain"
+prob = 30
+desc = "Sprain 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_hg34k"]
+script = ExtResource("1_ynyxm")
+id = 2142
+operation = "Block_Sprain"
+prob = 45
+desc = "Sprain 상태 이상 방어"
+
+[sub_resource type="Resource" id="Resource_3k0ul"]
+script = ExtResource("1_ynyxm")
+id = 2200
+operation = "Heal_Sickness"
+prob = 10
+value = 2.0
+desc = "Sickness 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_d7780"]
+script = ExtResource("1_ynyxm")
+id = 2201
+operation = "Heal_Sickness"
+prob = 20
+value = 3.0
+desc = "Sickness 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_ovvmn"]
+script = ExtResource("1_ynyxm")
+id = 2210
+operation = "Heal_Bruise"
+prob = 10
+value = 2.0
+desc = "Bruise 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_b2m48"]
+script = ExtResource("1_ynyxm")
+id = 2211
+operation = "Heal_Bruise"
+prob = 20
+value = 3.0
+desc = "Bruise 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_2r4qr"]
+script = ExtResource("1_ynyxm")
+id = 2212
+operation = "Heal_Bruise"
+prob = 30
+value = 4.0
+desc = "Bruise 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_xsewe"]
+script = ExtResource("1_ynyxm")
+id = 2220
+operation = "Heal_Wound"
+prob = 10
+value = 2.0
+desc = "Wound 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_8g30u"]
+script = ExtResource("1_ynyxm")
+id = 2221
+operation = "Heal_Wound"
+prob = 20
+value = 3.0
+desc = "Wound 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_7xm66"]
+script = ExtResource("1_ynyxm")
+id = 2222
+operation = "Heal_Wound"
+prob = 30
+value = 4.0
+desc = "Wound 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_00cuy"]
+script = ExtResource("1_ynyxm")
+id = 2230
+operation = "Heal_Burn"
+prob = 10
+value = 2.0
+desc = "Burn 상태 이상 치료"
+
+[sub_resource type="Resource" id="Resource_52omc"]
+script = ExtResource("1_ynyxm")
+id = 2231
+operation = "Heal_Burn"
+prob = 20
+value = 3.0
+desc = "Burn 상태 이상 치료"
+
+[resource]
+script = ExtResource("2_ivou8")
+records = {
+1000: SubResource("Resource_ynyxm"),
+1001: SubResource("Resource_ivou8"),
+1002: SubResource("Resource_ugwnd"),
+1100: SubResource("Resource_vme85"),
+1101: SubResource("Resource_xrxwi"),
+1401: SubResource("Resource_5em3y"),
+2000: SubResource("Resource_5qymk"),
+2001: SubResource("Resource_jmaas"),
+2002: SubResource("Resource_pxfod"),
+2010: SubResource("Resource_pl4vy"),
+2011: SubResource("Resource_u6yby"),
+2020: SubResource("Resource_larix"),
+2021: SubResource("Resource_f8jkq"),
+2030: SubResource("Resource_bjw4n"),
+2031: SubResource("Resource_xpdbl"),
+2040: SubResource("Resource_30o54"),
+2100: SubResource("Resource_y5ici"),
+2101: SubResource("Resource_5mmo3"),
+2102: SubResource("Resource_1yrot"),
+2110: SubResource("Resource_pjd3w"),
+2111: SubResource("Resource_rhmlu"),
+2112: SubResource("Resource_ewtx1"),
+2120: SubResource("Resource_qeau4"),
+2121: SubResource("Resource_l2ef3"),
+2122: SubResource("Resource_3kbho"),
+2130: SubResource("Resource_b76na"),
+2131: SubResource("Resource_3wjxl"),
+2132: SubResource("Resource_h15mp"),
+2140: SubResource("Resource_4w6ft"),
+2141: SubResource("Resource_66lfx"),
+2142: SubResource("Resource_hg34k"),
+2200: SubResource("Resource_3k0ul"),
+2201: SubResource("Resource_d7780"),
+2210: SubResource("Resource_ovvmn"),
+2211: SubResource("Resource_b2m48"),
+2212: SubResource("Resource_2r4qr"),
+2220: SubResource("Resource_xsewe"),
+2221: SubResource("Resource_8g30u"),
+2222: SubResource("Resource_7xm66"),
+2230: SubResource("Resource_00cuy"),
+2231: SubResource("Resource_52omc")
+}

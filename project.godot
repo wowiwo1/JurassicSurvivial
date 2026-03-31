@@ -17,11 +17,11 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-SignalBus="*res://assets/scripts/autoloads/SignalBus.gd"
-StatusManager="*res://assets/scripts/autoloads/StatusManager.gd"
-SaveManager="*res://assets/scripts/autoloads/SaveManager.gd"
-SoundManager="*res://assets/scripts/autoloads/SoundManager.gd"
-GlobalManager="*res://assets/scripts/autoloads/GlobalManager.gd"
+SignalBus="*res://Assets/Scripts/Autoloads/SignalBus.gd"
+StatusManager="*res://Assets/Scripts/Autoloads/StatusManager.gd"
+SaveManager="*res://Assets/Scripts/Autoloads/SaveManager.gd"
+SoundManager="*res://Assets/Scripts/Autoloads/SoundManager.gd"
+GlobalManager="*res://Assets/Scripts/Autoloads/GlobalManager.gd"
 
 [editor_plugins]
 

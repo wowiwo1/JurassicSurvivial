@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://b87wipwvt5k2r"]
+
+[ext_resource type="Script" uid="uid://mbpnnthp0la3" path="res://Assets/GameTable/Scripts/config_data.gd" id="1_y3vak"]
+[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://Assets/GameTable/Scripts/table_container.gd" id="2_kwqsq"]
+
+[sub_resource type="Resource" id="Resource_y3vak"]
+script = ExtResource("1_y3vak")
+id = 1
+key = "HungerDecay"
+value = "0.066667"
+
+[sub_resource type="Resource" id="Resource_kwqsq"]
+script = ExtResource("1_y3vak")
+id = 2
+key = "ThirstDecay"
+value = "0.026667"
+
+[sub_resource type="Resource" id="Resource_w2d58"]
+script = ExtResource("1_y3vak")
+id = 3
+key = "MentalDecay"
+value = "0.005333"
+
+[sub_resource type="Resource" id="Resource_8axor"]
+script = ExtResource("1_y3vak")
+id = 4
+key = "SleepIncrease"
+value = "0.04"
+
+[sub_resource type="Resource" id="Resource_5ewmu"]
+script = ExtResource("1_y3vak")
+id = 5
+key = "SleepRecovery"
+value = "0.2"
+
+[resource]
+script = ExtResource("2_kwqsq")
+records = {
+1: SubResource("Resource_y3vak"),
+2: SubResource("Resource_kwqsq"),
+3: SubResource("Resource_w2d58"),
+4: SubResource("Resource_8axor"),
+5: SubResource("Resource_5ewmu")
+}

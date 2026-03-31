@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="TableContainer" format=3 uid="uid://c084xhk075322"]
+
+[ext_resource type="Script" uid="uid://bhocim6871560" path="res://Assets/GameTable/Scripts/sfx_data.gd" id="1_8t50n"]
+[ext_resource type="Script" uid="uid://1uah858qt6on" path="res://Assets/GameTable/Scripts/table_container.gd" id="2_gdbqg"]
+
+[sub_resource type="Resource" id="Resource_8t50n"]
+script = ExtResource("1_8t50n")
+key = "카드 합칠떄"
+sfx = "사운드 파일명"
+
+[resource]
+script = ExtResource("2_gdbqg")
+records = {
+"카드 합칠떄": SubResource("Resource_8t50n")
+}

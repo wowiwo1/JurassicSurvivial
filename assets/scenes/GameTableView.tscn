@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dc3vcleviob2h"]
 
-[ext_resource type="Script" uid="uid://co8atx5lta4q" path="res://assets/scripts/test/tree_test.gd" id="1_le31a"]
+[ext_resource type="Script" uid="uid://co8atx5lta4q" path="res://Assets/Scripts/GameTableView/GameTableView.gd" id="1_mkori"]
 
-[node name="TreeTest" type="Control" unique_id=731878029]
+[node name="GameTableView" type="Control" unique_id=731878029]
 clip_contents = true
 layout_mode = 3
 anchors_preset = 15
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_le31a")
+script = ExtResource("1_mkori")
 
 [node name="Tree" type="Tree" parent="." unique_id=670571590]
 clip_contents = false
@@ -23,3 +23,5 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 12
 theme_override_font_sizes/title_button_font_size = 12
 select_mode = 1
+scroll_hint_mode = 1
+tile_scroll_hint = true

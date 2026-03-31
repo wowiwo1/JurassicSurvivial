@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c64p0grifg530"
-path="res://.godot/imported/Card_50044.png-0013fb422bc7bf00a812c52c0490d66b.ctex"
+path="res://.godot/imported/Card_50044.png-ed9e0fbd878fce0c9565427fe6b1426f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/card/pool/Card_50044.png"
-dest_files=["res://.godot/imported/Card_50044.png-0013fb422bc7bf00a812c52c0490d66b.ctex"]
+source_file="res://Assets/Sprites/Card/Pool/Card_50044.png"
+dest_files=["res://.godot/imported/Card_50044.png-ed9e0fbd878fce0c9565427fe6b1426f.ctex"]
 
 [params]
 
